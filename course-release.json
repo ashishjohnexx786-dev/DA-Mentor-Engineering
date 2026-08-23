@@ -1,0 +1,13 @@
+{
+  "mentor": "DA Mentor Engineering",
+  "course": "Course 3 — Data Engineering Specialization",
+  "final_course_version": "2026-v1.2",
+  "phases": 10,
+  "core_lessons": 140,
+  "video_required_dependencies": 0,
+  "recommended_visual_lessons": 44,
+  "video_status_values": ["☐ Not required", "☑ Recommended visual"],
+  "storage_key_preserved": "daMentorDataEngineering.v1",
+  "canonical_archive": "COURSE_3_DATA_ENGINEERING_MASTER_2026_FINAL_v1.2.zip",
+  "sync_policy": "Lesson IDs, C2 entry readiness, phase Gates, C3-113 Final Production Gate, video status and release controls must match the canonical final course. Existing progress storage is preserved."
+}
