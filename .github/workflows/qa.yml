@@ -1,0 +1,41 @@
+name: Mentor QA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: JavaScript syntax
+        run: |
+          node --check app.js
+          node --check curriculum.js
+          node --check service-worker.js
+      - name: Curriculum integrity
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const code=fs.readFileSync('curriculum.js','utf8')+'\nthis.__course=COURSE3;';
+          const ctx={}; vm.createContext(ctx); vm.runInContext(code,ctx);
+          const c=ctx.__course;
+          const lessons=c.reduce((n,p)=>n+p.lessons.length,0);
+          if(c.length!==10) throw new Error(`Expected 10 phases, got ${c.length}`);
+          if(lessons!==140) throw new Error(`Expected 140 lessons, got ${lessons}`);
+          if(new Set(c.flatMap(p=>p.lessons.map(l=>l.id))).size!==140) throw new Error('Lesson IDs are not unique');
+          console.log(`PASS: ${c.length} phases / ${lessons} unique lessons`);
+          NODE
+      - name: Required static files
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f manifest.webmanifest
+          test -f icon.svg
+          grep -q 'curriculum.js' index.html
+          grep -q 'app.js' index.html
