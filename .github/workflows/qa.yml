@@ -1,7 +1,9 @@
-name: Mentor QA
+name: DA Mentor Engineering QA
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -16,6 +18,7 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check app.js
+          node --check parity.js
           node --check curriculum.js
           node --check service-worker.js
       - name: Curriculum integrity
@@ -35,7 +38,13 @@ jobs:
         run: |
           test -f index.html
           test -f styles.css
+          test -f parity.css
+          test -f parity.js
           test -f manifest.webmanifest
           test -f icon.svg
           grep -q 'curriculum.js' index.html
           grep -q 'app.js' index.html
+          grep -q 'parity.js' index.html
+          grep -q 'parity.css' index.html
+          grep -q 'DA Mentor Engineering' index.html
+          grep -q 'amoled' index.html

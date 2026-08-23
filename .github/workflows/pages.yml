@@ -1,4 +1,4 @@
-name: Deploy DA Mentor to GitHub Pages
+name: Deploy DA Mentor Engineering to GitHub Pages
 
 on:
   push:
