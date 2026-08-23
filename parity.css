@@ -18,5 +18,12 @@ body.mentor-modern{background:var(--bg)!important}
 .mentor-modern .timerModes .btn.active{background:color-mix(in srgb,var(--accent) 18%,var(--panel2));box-shadow:inset 0 0 0 1px var(--accent)}
 .mentor-modern .themeGrid button.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .backupStatusCard .backupMeta{margin-top:7px}
+.settingsThemeGallery{margin:10px 0 16px;padding:12px 0 16px;border-bottom:1px solid var(--bd)}
+.settingsThemeGallery h3{margin:2px 0 0}.settingsThemeGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.settingsThemeCard{display:flex;align-items:center;gap:9px;text-align:left;border:1px solid var(--bd);background:var(--panel2);color:var(--txt);border-radius:12px;padding:9px;cursor:pointer}
+.settingsThemeCard.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.settingsThemeCard i{width:34px;height:34px;flex:0 0 34px;border-radius:10px;border:1px solid var(--bd)}
+.settingsThemeCard b,.settingsThemeCard small{display:block}.settingsThemeCard small{color:var(--mut);margin-top:2px}
+@media(max-width:560px){.settingsThemeGrid{grid-template-columns:1fr}}
 @media(hover:hover) and (pointer:fine){.mentor-modern .card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.03)}.mentor-modern .btn:hover,.mentor-modern .bigAction:hover{transform:translateY(-1px);filter:none;border-color:color-mix(in srgb,var(--bd) 70%,var(--accent) 30%)}}
 @media(prefers-reduced-motion:reduce){.mentor-modern .card,.mentor-modern .btn,.mentor-modern .bigAction{transition:none!important;transform:none!important}}
