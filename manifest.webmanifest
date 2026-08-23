@@ -1,0 +1,18 @@
+{
+  "name": "DA Mentor — Data Engineering",
+  "short_name": "DE Mentor",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "description": "Course 3 Data Engineering mentor with 140 lessons, competency gates, evidence tracking, timer and offline progress.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
