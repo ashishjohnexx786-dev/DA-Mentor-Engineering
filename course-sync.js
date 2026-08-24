@@ -10,11 +10,17 @@
       row.querySelector(".grow")?.appendChild(el);
     });
   }
+  function loadOptionalVideos(){
+    if(!document.querySelector('link[data-optional-videos]')){const l=document.createElement('link');l.rel='stylesheet';l.href='./optional-videos.css';l.dataset.optionalVideos='1';document.head.appendChild(l);}
+    if(window.OPTIONAL_VIDEO_MAP){if(!document.querySelector('script[data-optional-video-ui]')){const u=document.createElement('script');u.src='./optional-videos-ui.js';u.dataset.optionalVideoUi='1';document.body.appendChild(u);}return;}
+    if(!document.querySelector('script[data-optional-video-map]')){const m=document.createElement('script');m.src='./optional-videos.js';m.dataset.optionalVideoMap='1';m.onload=()=>{if(!document.querySelector('script[data-optional-video-ui]')){const u=document.createElement('script');u.src='./optional-videos-ui.js';u.dataset.optionalVideoUi='1';document.body.appendChild(u);}};document.body.appendChild(m);}
+  }
   function install(){
     applyData();if(state&&state.app!=="DA Mentor Engineering — Data Engineering"){state.app="DA Mentor Engineering — Data Engineering";persist();}
     const style=document.createElement("style");style.textContent=".courseVideoStatus{margin-top:4px;font-weight:650}";document.head.appendChild(style);
     if(typeof render==="function"){const base=render;render=function(){base();decorate()};render();}
     const b=document.getElementById("exportJsonBtn");if(b)b.onclick=()=>download(`DA_Mentor_Engineering_Backup_${todayKey()}.json`,JSON.stringify(state,null,2),"application/json");
+    loadOptionalVideos();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",install);else install();
 })();
