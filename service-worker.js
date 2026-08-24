@@ -1,4 +1,4 @@
-const CACHE="da-mentor-engineering-v2.3";
+const CACHE="da-mentor-engineering-v2.4";
 const APP=["./","./index.html","./styles.css","./parity.css","./curriculum.js","./app.js","./parity.js","./manifest.webmanifest","./icon.svg",'./course-sync.js','./optional-videos.js','./optional-videos-ui.js','./optional-videos.css'];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(APP)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE&&(k.startsWith("da-mentor-data-engineering")||k.startsWith("da-mentor-engineering"))).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
