@@ -19,7 +19,7 @@ Course 3 companion app for the **Data Engineering specialization**.
 - offline-first PWA support
 
 ## Shared Mentor family
-`DA Mentor Launch → DA Mentor Advance → DA Mentor Engineering`
+`DA Mentor Launch → DA Mentor Bridge (2B accelerated) → DA Mentor Engineering`, with `DA Mentor Advance (2A)` as the optional Senior/BI branch.
 
 All three Mentors intentionally share the same navigation language, dark minimalist visual system, focus tools, notes/tasks, repair workflow, evidence handling and backup/export concepts. Engineering is the third evolution: it keeps the familiar shell and adds stricter competency scoring, protected Gates, production evidence, DP-700 readiness and the Final Production Gate.
 
