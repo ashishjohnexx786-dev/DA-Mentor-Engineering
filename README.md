@@ -4,7 +4,7 @@ Course 3 companion app for the **Data Engineering specialization**.
 
 ## Course 3 scope
 - 10 phases / 140 locked core lessons
-- C2 Final Gate + C2-113 entry readiness lock
+- Course 2B Bridge Capstone + BRIDGE-062 Entry Gate readiness lock
 - Learn → Do → Check → Save → Pass workflow
 - practice-review lock
 - Mini-Lab scoring
@@ -21,7 +21,7 @@ Course 3 companion app for the **Data Engineering specialization**.
 ## Shared Mentor family
 `DA Mentor Launch → DA Mentor Bridge (2B accelerated) → DA Mentor Engineering`, with `DA Mentor Advance (2A)` as the optional Senior/BI branch.
 
-All three Mentors intentionally share the same navigation language, dark minimalist visual system, focus tools, notes/tasks, repair workflow, evidence handling and backup/export concepts. Engineering is the third evolution: it keeps the familiar shell and adds stricter competency scoring, protected Gates, production evidence, DP-700 readiness and the Final Production Gate.
+The Mentor family intentionally shares the same navigation language, dark minimalist visual system, focus tools, notes/tasks, repair workflow, evidence handling and backup/export concepts. Engineering is the third evolution: it keeps the familiar shell and adds stricter competency scoring, protected Gates, production evidence, DP-700 readiness and the Final Production Gate.
 
 The visual system uses restrained depth: subtle card lift and layering, no heavy neon/glow effects.
 
