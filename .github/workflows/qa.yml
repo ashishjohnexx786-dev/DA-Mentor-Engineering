@@ -1,9 +1,7 @@
-name: DA Mentor Engineering QA
+name: Final C3 Mentor 2026 QA
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -11,40 +9,50 @@ permissions:
   contents: read
 
 jobs:
-  validate:
+  final-qa:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: JavaScript syntax
+      - name: Canonical final-sync deploy manifest and file hashes
         run: |
-          node --check app.js
-          node --check parity.js
+          python - <<'PY'
+          import json,hashlib,pathlib
+          d=pathlib.Path('.'); m=json.loads((d/'DEPLOY_MANIFEST.json').read_text())
+          assert m['mentor']=='C3'
+          assert m['release']=='FINAL_SYNC_C3_110_TO_C3_116'
+          assert m['assetCount']==116
+          assert m['protectedC3_112Bundled'] is False
+          assert m['storageKey']=='daMentorDataEngineering.v1'
+          assert m['finalGate']=='C3-113'
+          for f in m['files']:
+              b=(d/f['path']).read_bytes(); assert len(b)==f['bytes']; assert hashlib.sha256(b).hexdigest()==f['sha256']
+          print('PASS canonical C3 final-sync deploy hashes')
+          PY
+      - name: Curriculum, packed PDFs, strict graduation, UX and cache
+        run: |
           node --check curriculum.js
+          node --check assets-pack.js
           node --check service-worker.js
-      - name: Curriculum integrity
-        run: |
           node - <<'NODE'
           const fs=require('fs'),vm=require('vm');
-          const code=fs.readFileSync('curriculum.js','utf8')+'\nthis.__course=COURSE3;';
-          const ctx={}; vm.createContext(ctx); vm.runInContext(code,ctx);
-          const c=ctx.__course;
-          const lessons=c.reduce((n,p)=>n+p.lessons.length,0);
-          if(c.length!==10) throw new Error(`Expected 10 phases, got ${c.length}`);
-          if(lessons!==140) throw new Error(`Expected 140 lessons, got ${lessons}`);
-          if(new Set(c.flatMap(p=>p.lessons.map(l=>l.id))).size!==140) throw new Error('Lesson IDs are not unique');
-          console.log(`PASS: ${c.length} phases / ${lessons} unique lessons`);
+          let c={};vm.createContext(c);vm.runInContext(fs.readFileSync('curriculum.js','utf8')+'\nthis.__r=COURSE3_REGISTRY;this.__t=CORE_TOTAL;',c);
+          if(c.__r.length!==10||c.__r.reduce((n,p)=>n+p.lessons.length,0)!==140||c.__t!==140)throw Error('C3 count mismatch');
+          c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets-pack.js','utf8'),c);
+          const a=c.window.MENTOR_ASSETS;if(Object.keys(a).length!==116)throw Error('asset count');
+          if(Object.keys(a).some(k=>k.includes('C3-112')||k.includes('C3_112')))throw Error('C3-112 reviewer pack exposed');
+          for(const [k,v] of Object.entries(a)){const b=Buffer.from(v.b,'base64');if(v.m==='application/pdf'&&b.subarray(0,4).toString()!=='%PDF')throw Error(k)}
+          const h=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('service-worker.js','utf8');
+          for(const s of ['Today','Learn','Course','Repair','Evidence','Jobs','Reports','START STUDY','END STUDY','genuine attempt','Fresh retry','Explain','Mastered','URL.createObjectURL','daMentorDataEngineering.v1','C3-113']) if(!h.includes(s)) throw Error('missing '+s);
+          if(h.includes('25:00')||h.toLowerCase().includes('pomodoro'))throw Error('obsolete timer');
+          if(!sw.includes('mentor-de-ux-final-sync-assets-2026-09-09-c3-v3'))throw Error('cache mismatch');
+          const strict=['85','critical failure','clean run','recovery','validation','reconciliation','reproduc','architecture'];
+          for(const s of strict) if(!h.toLowerCase().includes(s.toLowerCase())) throw Error('missing strict graduation marker '+s);
+          console.log('PASS C3 final UX/direct-open/strict graduation/cache');
           NODE
-      - name: Required static files
+      - name: HTTP serve smoke
         run: |
-          test -f index.html
-          test -f styles.css
-          test -f parity.css
-          test -f parity.js
-          test -f manifest.webmanifest
-          test -f icon.svg
-          grep -q 'curriculum.js' index.html
-          grep -q 'app.js' index.html
-          grep -q 'parity.js' index.html
-          grep -q 'parity.css' index.html
-          grep -q 'DA Mentor Engineering' index.html
-          grep -q 'amoled' index.html
+          python -m http.server 8765 >/tmp/http.log 2>&1 &
+          p=$!; trap 'kill $p' EXIT; sleep 1
+          curl -fsS http://127.0.0.1:8765/index.html >/dev/null
+          curl -fsS http://127.0.0.1:8765/service-worker.js >/dev/null
+          curl -fsS http://127.0.0.1:8765/assets-pack.js >/dev/null
