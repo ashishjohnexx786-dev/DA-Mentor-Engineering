@@ -8,8 +8,8 @@
   "files": [
     {
       "path": "assets-pack.js",
-      "bytes": 2622878,
-      "sha256": "31af84d31171cafb255e72806147b07f66b32d09c46d5a7d71fc9313bfd9d932"
+      "bytes": 2600834,
+      "sha256": "54f3f5d5fcf375840f95cf6d035a5bc82b4274e4d7adac5fbe9810e76482ea28"
     },
     {
       "path": "curriculum.js",
@@ -23,8 +23,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 67740,
-      "sha256": "fb5d5bc5a65d50c7f478bc19f124b85e689b807537822bf0d4bc5cf1cd072a65"
+      "bytes": 69051,
+      "sha256": "00e4045c198fbd3aad6b630669f7f7fe5208d1a7a17ed17b729fd82b1fbff431"
     },
     {
       "path": "manifest.webmanifest",
@@ -33,8 +33,8 @@
     },
     {
       "path": "service-worker.js",
-      "bytes": 921,
-      "sha256": "6dc3a1c2d58a3854842639cfec72dc0c0ac363062257e7d4adc4427075d0b6f8"
+      "bytes": 909,
+      "sha256": "3270eab277078b17b8c952510955b92e8fe77007d9a3b93a90ffe03957f5ad6a"
     }
   ],
   "staticChecks": {
@@ -51,6 +51,9 @@
     "strict score": true
   },
   "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09",
-  "mobileMarkupFix": "TEACHER_STEP_SIBLING_FIX_2026_09_09",
-  "studyNavigation": "ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED"
+  "mobileMarkupFix": "8_SIBLING_STEPS_NO_OVERLAP",
+  "studyNavigation": "ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED",
+  "finalRelease": "2026-09-10",
+  "reviewProtection": "GENUINE_ATTEMPT_BOOLEAN_REQUIRED",
+  "sourceLinks": "CURRENT_2026_09_10"
 }
