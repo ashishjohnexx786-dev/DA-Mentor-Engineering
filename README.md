@@ -2,33 +2,37 @@
 
 Course 3 companion app for the **Data Engineering specialization**.
 
-## Course 3 scope
-- 10 phases / 140 locked core lessons
-- Course 2B Bridge Capstone + BRIDGE-062 Entry Gate readiness lock
-- Learn → Do → Check → Save → Pass workflow
-- practice-review lock
-- Mini-Lab scoring
-- protected Phase Gates using the C3-007 competency standard
-- C3-113 Final Production Gate
-- targeted Error & Repair Center
-- sanitized engineering Evidence Vault
-- focus timer, daily target, reports, streak, tasks and notes
-- seven restrained dark themes including true AMOLED Black
-- JSON backup/restore with backup reminder/status
-- CSV lesson/evidence/Gate exports
-- offline-first PWA support
+## Identity
+- Product: **DA Mentor Engineering**
+- Course role: **Course 3 — Data Engineering**
+- Maintained branch: **main only**
+- Interaction model: shared **DE Mentor 2026** study experience; the Course 3 curriculum, engineering projects and production Gates remain authoritative.
 
-## Shared Mentor family
-`DA Mentor Launch → DA Mentor Bridge (2B accelerated) → DA Mentor Engineering`, with `DA Mentor Advance (2A)` as the optional Senior/BI branch.
+## Standard study route
+Every lesson follows the same teacher-like route used across the four Mentor apps:
+1. Understand the lesson goal.
+2. Learn / read / watch the assigned material.
+3. Follow one guided example.
+4. Make a genuine independent attempt.
+5. Open the protected review only after that attempt.
+6. Complete a fresh retry without copying the review.
+7. Explain the result aloud in your own words.
+8. Mark Mastered only after the fresh retry and explanation are complete.
 
-The Mentor family intentionally shares the same navigation language, dark minimalist visual system, focus tools, notes/tasks, repair workflow, evidence handling and backup/export concepts. Engineering is the third evolution: it keeps the familiar shell and adds stricter competency scoring, protected Gates, production evidence, DP-700 readiness and the Final Production Gate.
+**Skip for now is not completion.** **I’m stuck** routes the learner into targeted engineering repair.
 
-The visual system uses restrained depth: subtle card lift and layering, no heavy neon/glow effects.
+## Engineering integrity
+- 10 phases / 140 locked core lessons.
+- Bridge/entry readiness, Mini-Labs, phase Gates, capstone evidence and the Final Production Gate remain separate controls.
+- Protected reviewer/retest material stays sealed until the Mentor explicitly routes it.
+- Manual **START STUDY / END STUDY** tracking uses the real start timestamp; there is no fixed Pomodoro countdown.
+- Assigned visual/video companions and professional references are preserved.
+- Course-specific competency scoring is retained even though the interaction shell now matches the other Mentors.
 
 ## Progress safety
-Course 3 keeps its existing local progress store for backward compatibility. Product renaming and visual upgrades do not intentionally reset learner progress.
+Course 3 retains its existing local progress store for backward compatibility. Product/visual normalization does not intentionally reset learner progress. Backup/restore and evidence export remain available for learner-controlled portability.
 
 The protected **C3-112 Capstone Reviewer Pack must remain sealed** during Final Production Gate preparation.
 
-## Hosting
-Static offline-first PWA designed for GitHub Pages.
+## PWA / deployment
+Static offline-ready PWA for GitHub Pages. The canonical app identity is **DA Mentor Engineering**.
