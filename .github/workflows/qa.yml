@@ -18,41 +18,38 @@ jobs:
           python - <<'PY'
           import json,hashlib,pathlib
           d=pathlib.Path('.'); m=json.loads((d/'DEPLOY_MANIFEST.json').read_text())
-          assert m['mentor']=='C3'
-          assert m['release']=='FINAL_SYNC_C3_110_TO_C3_116'
-          assert m['assetCount']==116
-          assert m['protectedC3_112Bundled'] is False
-          assert m['storageKey']=='daMentorDataEngineering.v1'
-          assert m['finalGate']=='C3-113'
+          assert m['mentor']=='C3'; assert m['release']=='FINAL_SYNC_C3_110_TO_C3_116'; assert m['assetCount']==116
+          assert m['protectedC3_112Bundled'] is False; assert m['storageKey']=='daMentorDataEngineering.v1'; assert m['finalGate']=='C3-113'
+          assert m.get('runtimeFix')=='LIVE_QA_STEP_RERENDER_2026_09_09'
+          assert m.get('mobileMarkupFix')=='TEACHER_STEP_SIBLING_FIX_2026_09_09'
+          assert m.get('studyNavigation')=='ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED'
           for f in m['files']:
               b=(d/f['path']).read_bytes(); assert len(b)==f['bytes']; assert hashlib.sha256(b).hexdigest()==f['sha256']
           print('PASS canonical C3 final-sync deploy hashes')
           PY
-      - name: Curriculum, packed PDFs, strict graduation, UX and cache
+      - name: Curriculum packed PDFs strict graduation UX mobile structure and cache
         run: |
           node --check curriculum.js
           node --check assets-pack.js
           node --check service-worker.js
           node - <<'NODE'
-          const fs=require('fs'),vm=require('vm');
-          let c={};vm.createContext(c);vm.runInContext(fs.readFileSync('curriculum.js','utf8')+'\nthis.__r=COURSE3_REGISTRY;this.__t=CORE_TOTAL;',c);
+          const fs=require('fs'),vm=require('vm');let c={};vm.createContext(c);vm.runInContext(fs.readFileSync('curriculum.js','utf8')+'\nthis.__r=COURSE3_REGISTRY;this.__t=CORE_TOTAL;',c);
           if(c.__r.length!==10||c.__r.reduce((n,p)=>n+p.lessons.length,0)!==140||c.__t!==140)throw Error('C3 count mismatch');
-          c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets-pack.js','utf8'),c);
-          const a=c.window.MENTOR_ASSETS;if(Object.keys(a).length!==116)throw Error('asset count');
+          c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets-pack.js','utf8'),c);const a=c.window.MENTOR_ASSETS;if(Object.keys(a).length!==116)throw Error('asset count');
           if(Object.keys(a).some(k=>k.includes('C3-112')||k.includes('C3_112')))throw Error('C3-112 reviewer pack exposed');
           for(const [k,v] of Object.entries(a)){const b=Buffer.from(v.b,'base64');if(v.m==='application/pdf'&&b.subarray(0,4).toString()!=='%PDF')throw Error(k)}
           const h=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('service-worker.js','utf8');
-          for(const s of ['Today','Learn','Course','Repair','Evidence','Jobs','Reports','START STUDY','END STUDY','genuine attempt','Fresh retry','Explain','Mastered','URL.createObjectURL','daMentorDataEngineering.v1','C3-113']) if(!h.includes(s)) throw Error('missing '+s);
+          for(const s of ['Today','Learn','Course','Repair','Evidence','Jobs','Reports','START STUDY','END STUDY','genuine attempt','Fresh retry','Explain','Mastered','URL.createObjectURL','daMentorDataEngineering.v1','C3-113','save();renderLearn()}','const phaseUnlocked=p=>true;','All lessons and phases are open for study in any order.'])if(!h.includes(s))throw Error('missing '+s);
           if(h.includes('25:00')||h.toLowerCase().includes('pomodoro'))throw Error('obsolete timer');
-          if(!sw.includes('mentor-de-ux-final-sync-assets-2026-09-09-c3-v3'))throw Error('cache mismatch');
-          const strict=['85','critical failure','clean run','recovery','validation','reconciliation','reproduc','architecture'];
-          for(const s of strict) if(!h.toLowerCase().includes(s.toLowerCase())) throw Error('missing strict graduation marker '+s);
-          console.log('PASS C3 final UX/direct-open/strict graduation/cache');
+          const bad='id="practiceBtn">🧪 Practice</button></div></div><div class="teacherStep"><span>3</span>';const good='id="practiceBtn">🧪 Practice</button></div></div></div><div class="teacherStep"><span>3</span>';
+          if(h.includes(bad)||!h.includes(good))throw Error('teacher-step markup regression');
+          if(!sw.includes('mentor-de-ux-final-sync-assets-2026-09-09-c3-v5'))throw Error('cache mismatch');
+          const strict=['85','critical failure','clean run','recovery','validation','reconciliation','reproduc','architecture'];for(const s of strict)if(!h.toLowerCase().includes(s))throw Error('missing strict graduation marker '+s);
+          console.log('PASS C3 final mobile/open-study/strict-graduation/cache QA');
           NODE
       - name: HTTP serve smoke
         run: |
-          python -m http.server 8765 >/tmp/http.log 2>&1 &
-          p=$!; trap 'kill $p' EXIT; sleep 1
+          python -m http.server 8765 >/tmp/http.log 2>&1 & p=$!; trap 'kill $p' EXIT; sleep 1
           curl -fsS http://127.0.0.1:8765/index.html >/dev/null
           curl -fsS http://127.0.0.1:8765/service-worker.js >/dev/null
           curl -fsS http://127.0.0.1:8765/assets-pack.js >/dev/null
