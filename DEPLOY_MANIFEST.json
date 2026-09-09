@@ -23,8 +23,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 67607,
-      "sha256": "5979b54072644a5cc88245a14ccdc14cfed9f743756cca5bcad2bcfe3abbe9b1"
+      "bytes": 67621,
+      "sha256": "dec69ee763c284285ebe3c45ca3bd3af80191d5d882c52eaad07470d5d2140fc"
     },
     {
       "path": "manifest.webmanifest",
@@ -34,7 +34,7 @@
     {
       "path": "service-worker.js",
       "bytes": 921,
-      "sha256": "356102a111032b008bb78a97525b3a7b97620a7b3fa73be4f01a9f987f8c220d"
+      "sha256": "51b89c2c7b82eedd427b5c4bef59531678d8598b8d45183d9e4464ec07381a57"
     }
   ],
   "staticChecks": {
@@ -49,5 +49,6 @@
     "no 25:00": true,
     "no pomodoro": true,
     "strict score": true
-  }
+  },
+  "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09"
 }
