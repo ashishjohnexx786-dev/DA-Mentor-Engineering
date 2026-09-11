@@ -1,0 +1,55 @@
+name: Runtime Repair C3 2026
+on:
+  push:
+    branches: ['runtime-candidate/five-course-2026-09-11']
+    paths: ['.github/workflows/runtime-repair-c3.yml']
+permissions:
+  contents: write
+jobs:
+  repair-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: runtime-candidate/five-course-2026-09-11
+      - name: Restore omitted runtime render handlers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          marker='function renderCareerSections()'
+          assert marker in s
+          if 'function renderRepair()' not in s:
+              patch=r'''function renderRepair(){const due=dueRevisions();$('#revisionList').innerHTML=due.length?due.map(x=>`<div class="revisionRow"><div class="grow"><div class="rowTitle">${esc(x.id)} — ${esc(x.title)}</div><div class="rowSub">Fresh recall due. Reproduce the skill without reopening the answer first.</div></div><button class="btn" data-revised="${esc(x.id)}">Done</button></div>`).join(''):'<p class="muted tiny">No revision is due today.</p>';$('#repairList').innerHTML=S.errors.length?S.errors.slice().reverse().map((e,ri)=>{const i=S.errors.length-1-ri;return `<div class="repairRow"><div class="grow"><div class="rowTitle">${esc(e.skill)}</div><div class="rowSub">${esc(e.issue)}<br>Repair: ${esc(e.repair||'Targeted repair → fresh changed retry')}</div></div><button class="btn" data-fix="${i}">${e.done?'Reopen':'Repaired'}</button><button class="btn danger" data-delerr="${i}">×</button></div>`}).join(''):'<p class="muted tiny">No recorded weaknesses yet.</p>';$$('[data-revised]').forEach(b=>b.onclick=()=>{S.revisions[b.dataset.revised]=(S.revisions[b.dataset.revised]||[]).filter(d=>d>dateKey());save();renderRepair()});$$('[data-fix]').forEach(b=>b.onclick=()=>{S.errors[+b.dataset.fix].done=!S.errors[+b.dataset.fix].done;save();renderRepair()});$$('[data-delerr]').forEach(b=>b.onclick=()=>{S.errors.splice(+b.dataset.delerr,1);save();renderRepair()})}
+function renderEvidence(){$('#evidenceList').innerHTML=S.evidence.length?S.evidence.slice().reverse().map((e,ri)=>{const i=S.evidence.length-1-ri;return `<div class="evidenceRow"><div class="grow"><div class="rowTitle">${esc(e.skill)}</div><div class="rowSub">${esc(e.action)} • ${esc(e.date||'')}</div></div><button class="btn danger" data-delev="${i}">×</button></div>`}).join(''):'<p class="muted tiny">No evidence saved yet.</p>';$$('[data-delev]').forEach(b=>b.onclick=()=>{S.evidence.splice(+b.dataset.delev,1);save();renderEvidence()})}
+function renderJobs(){const applied=S.applications.length,interviews=S.applications.filter(x=>x.status==='Interview').length,offers=S.applications.filter(x=>x.status==='Offer').length;$('#jobHeading').textContent=CFG.careerTitle||'Evidence-led career progress';$('#jobIntro').textContent=CFG.careerIntro||'Use this only after the course route says career action is appropriate.';$('#jobStats').innerHTML=`<div class="jobMini"><b>${applied}</b><span>Tracked</span></div><div class="jobMini"><b>${interviews}</b><span>Interviews</span></div><div class="jobMini"><b>${offers}</b><span>Offers</span></div><div class="jobMini"><b>${CFG.roleLabel||'Next role'}</b><span>Target</span></div>`;$('#applicationList').innerHTML=S.applications.slice().reverse().map((a,ri)=>{const i=S.applications.length-1-ri;return `<div class="jobRow"><div class="grow"><div class="rowTitle">${esc(a.company)} — ${esc(a.role)}</div><div class="rowSub">${esc(a.status)} • ${esc(a.date)}</div></div><button class="btn danger" data-delapp="${i}">×</button></div>`}).join('')||'<p class="muted tiny">No applications tracked yet.</p>';$$('[data-delapp]').forEach(b=>b.onclick=()=>{S.applications.splice(+b.dataset.delapp,1);save();renderJobs()});renderCareerSections();}
+'''
+              s=s.replace(marker,patch+marker,1)
+              p.write_text(s)
+          sw=Path('service-worker.js')
+          t=sw.read_text()
+          t=t.replace('da-mentor-engineering-course3-master-repair-rc2-2026-09-11','da-mentor-engineering-course3-master-repair-rc2-runtimefix1-2026-09-11')
+          sw.write_text(t)
+          assert all(x in p.read_text() for x in ['function renderRepair()','function renderEvidence()','function renderJobs()'])
+          PY
+          python - <<'PY'
+          import re,subprocess,pathlib
+          h=pathlib.Path('index.html').read_text()
+          for i,m in enumerate(re.finditer(r'<script([^>]*)>(.*?)</script>',h,re.S|re.I)):
+              if re.search(r'\bsrc\s*=',m.group(1),re.I): continue
+              f=pathlib.Path(f'/tmp/c3-inline-{i}.js');f.write_text(m.group(2));subprocess.run(['node','--check',str(f)],check=True)
+          PY
+      - name: Commit repaired candidate bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'five-course-runtime-repair'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html service-worker.js
+          if git diff --cached --quiet; then echo 'Repair already present'; exit 0; fi
+          git commit -m 'Repair C3 runtime render handlers'
+          git push origin HEAD:runtime-candidate/five-course-2026-09-11
