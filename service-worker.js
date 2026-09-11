@@ -1,4 +1,4 @@
-const CACHE="da-mentor-engineering-course3-master-repair-rc2-2026-09-11";
+const CACHE="da-mentor-engineering-course3-master-repair-rc2-runtimefix1-2026-09-11";
 const APP=["./","./index.html","./manifest.webmanifest","./curriculum.js","./icon.svg"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(APP)));self.skipWaiting();});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))));self.clients.claim();});
