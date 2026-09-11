@@ -1,0 +1,106 @@
+{
+  "pass": 20,
+  "fail": 0,
+  "results": [
+    {
+      "check": "Chromium DOM boot",
+      "status": "PASS",
+      "detail": "DA Mentor Engineering - Course 3"
+    },
+    {
+      "check": "Chromium no page errors",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Common shell surfaces",
+      "status": "PASS",
+      "detail": "['Today', 'Learn', 'Course', 'Repair', 'Evidence', 'Jobs', 'Reports', '\u2699 Settings']"
+    },
+    {
+      "check": "Review initially locked",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Starter direct-open visible",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Review unlocks after genuine attempt",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Fresh retry unlocks after review",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Final Gate locked before strict evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No numeric Final-Gate controls",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Strict Final-Gate control count",
+      "status": "PASS",
+      "detail": "18"
+    },
+    {
+      "check": "Final Gate enables only after all strict controls",
+      "status": "PASS",
+      "detail": "True"
+    },
+    {
+      "check": "C3-114/C3-116 unlock after strict PASS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy numeric competency values rejected",
+      "status": "PASS",
+      "detail": "LOCKED"
+    },
+    {
+      "check": "Gate B sealed after Gate A repair",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': False}"
+    },
+    {
+      "check": "Explicit Gate B assignment required",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': True}"
+    },
+    {
+      "check": "Gate B appears after explicit assignment",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': True}"
+    },
+    {
+      "check": "Gate C remains sealed",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': False}"
+    },
+    {
+      "check": "Responsive no horizontal overflow",
+      "status": "PASS",
+      "detail": "[[360, 360, 360, True], [390, 390, 390, True], [412, 412, 412, True], [768, 768, 768, True], [1440, 1440, 1440, True]]"
+    },
+    {
+      "check": "AMOLED true black",
+      "status": "PASS",
+      "detail": "#000"
+    },
+    {
+      "check": "C3-112 reviewer pack excluded",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

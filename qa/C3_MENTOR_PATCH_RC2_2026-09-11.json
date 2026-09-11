@@ -1,0 +1,14 @@
+{
+  "synced_asset_pdfs": 130,
+  "asset_pdf_count": 136,
+  "manifest_rows": 200,
+  "cache": "da-mentor-engineering-course3-master-repair-rc2-2026-09-11",
+  "state_repairs": [
+    "reviewViewed",
+    "repairDone",
+    "repairEvidence",
+    "explicit reassessment assignment",
+    "unassigned Gate B/C absent from DOM",
+    "targeted remediation hidden until failed attempt + review"
+  ]
+}

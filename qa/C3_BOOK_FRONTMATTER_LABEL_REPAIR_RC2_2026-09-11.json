@@ -1,0 +1,106 @@
+{
+  "phases": {
+    "C3-00": {
+      "lessons": 12,
+      "book": "C3_010_ENGINEERING_FOUNDATIONS_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 39,
+      "new_pages": 43,
+      "lesson_page_shift": 3,
+      "label_clean_files": 5,
+      "label_replacements": 5,
+      "manifest_rows": 29
+    },
+    "C3-01": {
+      "lessons": 14,
+      "book": "C3_020_DATA_INGESTION_INTERFACES_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 44,
+      "new_pages": 48,
+      "lesson_page_shift": 3,
+      "label_clean_files": 5,
+      "label_replacements": 5,
+      "manifest_rows": 30
+    },
+    "C3-02": {
+      "lessons": 14,
+      "book": "C3_030_TRANSFORMATION_ENGINEERING_WAREHOUSING_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 45,
+      "new_pages": 49,
+      "lesson_page_shift": 3,
+      "label_clean_files": 5,
+      "label_replacements": 5,
+      "manifest_rows": 81
+    },
+    "C3-03": {
+      "lessons": 13,
+      "book": "C3_040_ORCHESTRATION_RELIABLE_WORKFLOWS_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 41,
+      "new_pages": 45,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 24,
+      "manifest_rows": 31
+    },
+    "C3-04": {
+      "lessons": 13,
+      "book": "C3_050_STORAGE_FILE_FORMATS_LAKEHOUSE_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 41,
+      "new_pages": 45,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 24,
+      "manifest_rows": 31
+    },
+    "C3-05": {
+      "lessons": 16,
+      "book": "C3_060_DISTRIBUTED_PROCESSING_SPARK_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 50,
+      "new_pages": 54,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 12,
+      "manifest_rows": 31
+    },
+    "C3-06": {
+      "lessons": 13,
+      "book": "C3_070_STREAMING_EVENT_DRIVEN_PIPELINES_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 41,
+      "new_pages": 45,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 12,
+      "manifest_rows": 31
+    },
+    "C3-07": {
+      "lessons": 15,
+      "book": "C3_080_CLOUD_MICROSOFT_FABRIC_DATA_ENGINEERING_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 47,
+      "new_pages": 51,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 12,
+      "manifest_rows": 34
+    },
+    "C3-08": {
+      "lessons": 15,
+      "book": "C3_090_QUALITY_OBSERVABILITY_SECURITY_DATAOPS_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 47,
+      "new_pages": 51,
+      "lesson_page_shift": 3,
+      "label_clean_files": 11,
+      "label_replacements": 60,
+      "manifest_rows": 33
+    },
+    "C3-09": {
+      "lessons": 15,
+      "book": "C3_100_PRODUCTION_CAPSTONE_ENGINEERING_TRANSITION_BEGINNER_FIRST_LESSON_BOOK_RC1.pdf",
+      "old_pages": 47,
+      "new_pages": 51,
+      "lesson_page_shift": 3,
+      "label_clean_files": 12,
+      "label_replacements": 12,
+      "manifest_rows": 31
+    }
+  },
+  "label_clean_files": 98,
+  "label_replacements": 171
+}

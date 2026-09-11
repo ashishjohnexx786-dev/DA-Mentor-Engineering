@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "settings_tab": true,
+    "settings_view": true,
+    "obsolete_settings_modal_removed": true,
+    "obsolete_settings_top_button_removed": true,
+    "option_b_light_theme": true,
+    "icon_img": true
+  },
+  "status": "PASS"
+}

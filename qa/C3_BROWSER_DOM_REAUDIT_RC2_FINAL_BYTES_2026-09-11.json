@@ -1,0 +1,221 @@
+{
+  "mode": "playwright_page_set_content_no_network",
+  "viewports": {
+    "390": {
+      "theme": "midnight",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "navButtons": [
+        "Today",
+        "Learn",
+        "Course",
+        "Repair",
+        "Evidence",
+        "Jobs",
+        "Reports",
+        "Settings"
+      ],
+      "subtitle": "Course 3 \u2022 Data Engineering 2026",
+      "logoImg": true,
+      "settingsModal": false,
+      "settingsView": true,
+      "overflow": false,
+      "settings_active": true,
+      "light_theme": {
+        "theme": "light",
+        "accent": "#14b8a6",
+        "accent2": "#3b82f6"
+      }
+    },
+    "412": {
+      "theme": "midnight",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "scrollWidth": 412,
+      "clientWidth": 412,
+      "navButtons": [
+        "Today",
+        "Learn",
+        "Course",
+        "Repair",
+        "Evidence",
+        "Jobs",
+        "Reports",
+        "Settings"
+      ],
+      "subtitle": "Course 3 \u2022 Data Engineering 2026",
+      "logoImg": true,
+      "settingsModal": false,
+      "settingsView": true,
+      "overflow": false,
+      "settings_active": true,
+      "light_theme": {
+        "theme": "light",
+        "accent": "#14b8a6",
+        "accent2": "#3b82f6"
+      }
+    },
+    "768": {
+      "theme": "midnight",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "navButtons": [
+        "Today",
+        "Learn",
+        "Course",
+        "Repair",
+        "Evidence",
+        "Jobs",
+        "Reports",
+        "Settings"
+      ],
+      "subtitle": "Course 3 \u2022 Data Engineering 2026",
+      "logoImg": true,
+      "settingsModal": false,
+      "settingsView": true,
+      "overflow": false,
+      "settings_active": true,
+      "light_theme": {
+        "theme": "light",
+        "accent": "#14b8a6",
+        "accent2": "#3b82f6"
+      }
+    },
+    "1440": {
+      "theme": "midnight",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "navButtons": [
+        "Today",
+        "Learn",
+        "Course",
+        "Repair",
+        "Evidence",
+        "Jobs",
+        "Reports",
+        "Settings"
+      ],
+      "subtitle": "Course 3 \u2022 Data Engineering 2026",
+      "logoImg": true,
+      "settingsModal": false,
+      "settingsView": true,
+      "overflow": false,
+      "settings_active": true,
+      "light_theme": {
+        "theme": "light",
+        "accent": "#14b8a6",
+        "accent2": "#3b82f6"
+      }
+    }
+  },
+  "gate_state_machine": {
+    "fresh_mastered_before_gate_A": {
+      "B_gate_exposed": false,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": false,
+      "repair_button_visible": false
+    },
+    "after_A_fail_before_review": {
+      "B_gate_exposed": false,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": false,
+      "repair_button_visible": false
+    },
+    "after_A_review_before_repair": {
+      "B_gate_exposed": false,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "after_A_repair_before_B_assignment": {
+      "B_gate_exposed": false,
+      "C_gate_exposed": false,
+      "assign_B_visible": true,
+      "assign_C_visible": false,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "after_B_assignment": {
+      "B_gate_exposed": true,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "after_B_fail_before_review": {
+      "B_gate_exposed": true,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": false,
+      "repair_button_visible": false
+    },
+    "after_B_review_before_repair": {
+      "B_gate_exposed": true,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "after_B_repair_before_C_assignment": {
+      "B_gate_exposed": true,
+      "C_gate_exposed": false,
+      "assign_B_visible": false,
+      "assign_C_visible": true,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "after_C_assignment": {
+      "B_gate_exposed": true,
+      "C_gate_exposed": true,
+      "assign_B_visible": false,
+      "assign_C_visible": false,
+      "remediation_visible": true,
+      "repair_button_visible": true
+    },
+    "saved_state": {
+      "A": {
+        "assigned": true,
+        "attempt": true,
+        "result": "NEEDS_REPAIR",
+        "reviewViewed": true,
+        "repairDone": true,
+        "repairEvidence": "Rebuilt the failed C3-00 competency and saved a changed micro-proof with validation."
+      },
+      "B": {
+        "assigned": true,
+        "attempt": true,
+        "result": "NEEDS_REPAIR",
+        "reviewViewed": true,
+        "repairDone": true,
+        "repairEvidence": "Repaired the failed Gate B competency and saved an independent changed micro-proof."
+      },
+      "C": {
+        "assigned": true,
+        "attempt": false,
+        "result": "",
+        "reviewViewed": false,
+        "repairDone": false,
+        "repairEvidence": ""
+      }
+    }
+  },
+  "console_errors": [],
+  "page_errors": [],
+  "summary": {
+    "viewport_shell_branding_pass": true,
+    "gate_state_machine_pass": true,
+    "no_console_or_page_errors": true,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pass": 3,
+  "fail": 0,
+  "results": [
+    {
+      "check": "Routed asset headers",
+      "status": "PASS",
+      "detail": "176 assets, 0 failures"
+    },
+    {
+      "check": "Exact route page ranges",
+      "status": "PASS",
+      "detail": "420 targets across 30 PDFs, 0 bad"
+    },
+    {
+      "check": "Routed ZIP CRC",
+      "status": "PASS",
+      "detail": "46 ZIPs, 0 bad"
+    }
+  ]
+}

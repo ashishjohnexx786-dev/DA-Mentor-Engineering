@@ -1,0 +1,67 @@
+{
+  "pass": 11,
+  "fail": 0,
+  "pending": 1,
+  "results": [
+    {
+      "check": "Node syntax curriculum.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Node syntax service-worker.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inline JS syntax 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inline JS syntax 2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Learn DOM has 8 direct teacher steps",
+      "status": "PASS",
+      "detail": "['Understand the point', 'Learn / watch / read', 'Follow once', 'Do it alone', 'Check only after attempt', 'Fresh retry', 'Explain it simply', 'Master or repair']"
+    },
+    {
+      "check": "Service worker version/fetch/no-store",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PWA manifest standalone/Option-B",
+      "status": "PASS",
+      "detail": "{'name': 'DA Mentor Engineering - Course 3', 'short_name': 'Mentor Engineering', 'start_url': './', 'display': 'standalone', 'background_color': '#000000', 'theme_color': '#1F2937', 'icons': [{'src': 'icon.svg', 'sizes': 'any', 'type': 'image/svg+xml'}]}"
+    },
+    {
+      "check": "Service-worker core cache assets exist",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Storage key preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Old fixed timer absent",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Option-B palette present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Hosted SW/PWA runtime external",
+      "status": "PENDING",
+      "detail": "PENDING: managed Chromium blocks private/file navigation; actual SW registration/install and physical Android are external evidence."
+    }
+  ]
+}

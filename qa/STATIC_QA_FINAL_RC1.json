@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "pass": 16,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "check": "10 phases",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "140 lessons",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "140 lesson routes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "common shell",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "storage key preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "manual timer present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "old timer absent",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Option B colors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "strict final helper",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "old final score UI absent",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "C3-112 learner leakage",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "starter button present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "gate case routes present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final visible assets",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "lesson route files exist",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "phase artifact routes exist",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "phaseInventory": {
+    "C3-00": {
+      "archive": "/mnt/data/c3_c00_rc1/C3_00_ENGINEERING_FOUNDATIONS_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 19,
+      "lesson_routes": 12
+    },
+    "C3-01": {
+      "archive": "/mnt/data/c3_c01_rc1/C3_01_DATA_INGESTION_INTERFACES_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 14
+    },
+    "C3-02": {
+      "archive": "/mnt/data/c3_c02_rc1/C3_02_TRANSFORMATION_ENGINEERING_WAREHOUSING_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 14
+    },
+    "C3-03": {
+      "archive": "/mnt/data/c3_c03_rc1/C3_03_ORCHESTRATION_RELIABLE_WORKFLOWS_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 13
+    },
+    "C3-04": {
+      "archive": "/mnt/data/c3_c04_rc1/C3_04_STORAGE_FILE_FORMATS_LAKEHOUSE_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 13
+    },
+    "C3-05": {
+      "archive": "/mnt/data/c3_c05_rc1/C3_05_DISTRIBUTED_PROCESSING_SPARK_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 16
+    },
+    "C3-06": {
+      "archive": "/mnt/data/c3_c06_rc1/C3_06_STREAMING_EVENT_DRIVEN_PIPELINES_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 13
+    },
+    "C3-07": {
+      "archive": "/mnt/data/c3_c07_rc1/C3_07_CLOUD_MICROSOFT_FABRIC_DATA_ENGINEERING_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 15
+    },
+    "C3-08": {
+      "archive": "/mnt/data/c3_c08_rc1/C3_08_QUALITY_OBSERVABILITY_SECURITY_DATAOPS_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 17,
+      "lesson_routes": 15
+    },
+    "C3-09": {
+      "archive": "/mnt/data/c3_c09_rc1/C3_09_PRODUCTION_CAPSTONE_ENGINEERING_TRANSITION_BEGINNER_FIRST_RC1_QA_PASS.zip",
+      "copied_files": 18,
+      "lesson_routes": 15
+    }
+  }
+}

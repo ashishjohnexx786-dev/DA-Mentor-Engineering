@@ -1,0 +1,41 @@
+{
+  "pass": 7,
+  "fail": 0,
+  "results": [
+    {
+      "check": "Legacy identity/theme/current phase migrate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy lesson mastery/attempt migrate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy phase lab/Gate A migrate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy Bridge entry floors migrate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy study/evidence/notes migrate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy final pass never trusted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Backup/restore current-schema roundtrip",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

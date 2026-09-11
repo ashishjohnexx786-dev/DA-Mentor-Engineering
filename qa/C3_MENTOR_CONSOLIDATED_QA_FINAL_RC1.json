@@ -1,0 +1,388 @@
+{
+  "summary": {
+    "pass": 60,
+    "pending": 1,
+    "fail": 0
+  },
+  "sources": [
+    "STATIC_QA_FINAL_RC1.json",
+    "ROUTE_PACKAGE_QA_FINAL_RC1.json",
+    "CHROMIUM_DOM_QA_FINAL_RC1.json",
+    "MIGRATION_BACKUP_QA_FINAL_RC1.json",
+    "PWA_STATIC_QA_FINAL_RC1.json",
+    "HTTP_ASSET_QA_FINAL_RC1.json"
+  ],
+  "known_external_boundary": [
+    "Hosted service-worker registration/PWA install cannot be exercised on this managed browser because private/file navigation is administrator-blocked.",
+    "Physical Android install/persistence/background behavior remains device evidence.",
+    "Live dbt/Airflow/Spark/Kafka/Delta/Fabric/GitHub-OIDC execution remains learner/runtime evidence where the course requires it."
+  ],
+  "results": [
+    {
+      "check": "10 phases",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "140 lessons",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "140 lesson routes",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "common shell",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "storage key preserved",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "manual timer present",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "old timer absent",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Option B colors",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "strict final helper",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "old final score UI absent",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "C3-112 learner leakage",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "starter button present",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "gate case routes present",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "final visible assets",
+      "status": "PASS",
+      "detail": "",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "lesson route files exist",
+      "status": "PASS",
+      "detail": "[]",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "phase artifact routes exist",
+      "status": "PASS",
+      "detail": "[]",
+      "source": "STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Routed asset headers",
+      "status": "PASS",
+      "detail": "176 assets, 0 failures",
+      "source": "ROUTE_PACKAGE_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Exact route page ranges",
+      "status": "PASS",
+      "detail": "420 targets across 30 PDFs, 0 bad",
+      "source": "ROUTE_PACKAGE_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Routed ZIP CRC",
+      "status": "PASS",
+      "detail": "46 ZIPs, 0 bad",
+      "source": "ROUTE_PACKAGE_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Chromium DOM boot",
+      "status": "PASS",
+      "detail": "DA Mentor Engineering - Course 3",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Chromium no page errors",
+      "status": "PASS",
+      "detail": "[]",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Common shell surfaces",
+      "status": "PASS",
+      "detail": "['Today', 'Learn', 'Course', 'Repair', 'Evidence', 'Jobs', 'Reports', '\u2699 Settings']",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Review initially locked",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Starter direct-open visible",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Review unlocks after genuine attempt",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Fresh retry unlocks after review",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Final Gate locked before strict evidence",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "No numeric Final-Gate controls",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Strict Final-Gate control count",
+      "status": "PASS",
+      "detail": "18",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Final Gate enables only after all strict controls",
+      "status": "PASS",
+      "detail": "True",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "C3-114/C3-116 unlock after strict PASS",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy numeric competency values rejected",
+      "status": "PASS",
+      "detail": "LOCKED",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Gate B sealed after Gate A repair",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': False}",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Explicit Gate B assignment required",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': True}",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Gate B appears after explicit assignment",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': True}",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Gate C remains sealed",
+      "status": "PASS",
+      "detail": "{'count': 1, 'visible': False}",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Responsive no horizontal overflow",
+      "status": "PASS",
+      "detail": "[[360, 360, 360, True], [390, 390, 390, True], [412, 412, 412, True], [768, 768, 768, True], [1440, 1440, 1440, True]]",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "AMOLED true black",
+      "status": "PASS",
+      "detail": "#000",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "C3-112 reviewer pack excluded",
+      "status": "PASS",
+      "detail": "",
+      "source": "CHROMIUM_DOM_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy identity/theme/current phase migrate",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy lesson mastery/attempt migrate",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy phase lab/Gate A migrate",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy Bridge entry floors migrate",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy study/evidence/notes migrate",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Legacy final pass never trusted",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Backup/restore current-schema roundtrip",
+      "status": "PASS",
+      "detail": "",
+      "source": "MIGRATION_BACKUP_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Node syntax curriculum.js",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Node syntax service-worker.js",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Inline JS syntax 1",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Inline JS syntax 2",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Learn DOM has 8 direct teacher steps",
+      "status": "PASS",
+      "detail": "['Understand the point', 'Learn / watch / read', 'Follow once', 'Do it alone', 'Check only after attempt', 'Fresh retry', 'Explain it simply', 'Master or repair']",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Service worker version/fetch/no-store",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "PWA manifest standalone/Option-B",
+      "status": "PASS",
+      "detail": "{'name': 'DA Mentor Engineering - Course 3', 'short_name': 'Mentor Engineering', 'start_url': './', 'display': 'standalone', 'background_color': '#000000', 'theme_color': '#1F2937', 'icons': [{'src': 'icon.svg', 'sizes': 'any', 'type': 'image/svg+xml'}]}",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Service-worker core cache assets exist",
+      "status": "PASS",
+      "detail": "[]",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Storage key preserved",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Old fixed timer absent",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Option-B palette present",
+      "status": "PASS",
+      "detail": "",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Hosted SW/PWA runtime external",
+      "status": "PENDING",
+      "detail": "PENDING: managed Chromium blocks private/file navigation; actual SW registration/install and physical Android are external evidence.",
+      "source": "PWA_STATIC_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "HTTP direct-open asset validation",
+      "status": "PASS",
+      "detail": "181/181 HTTP HEAD 200",
+      "source": "HTTP_ASSET_QA_FINAL_RC1.json"
+    },
+    {
+      "check": "Learn HTML nesting regression fixed",
+      "status": "PASS",
+      "detail": "8 teacher steps are direct siblings; mobile overlap/click interception removed.",
+      "source": "Chromium+DOM"
+    },
+    {
+      "check": "Learn step state refresh regression fixed",
+      "status": "PASS",
+      "detail": "Guided -> Attempt -> Review -> Fresh retry controls update without leaving the page.",
+      "source": "Chromium+DOM"
+    }
+  ]
+}
