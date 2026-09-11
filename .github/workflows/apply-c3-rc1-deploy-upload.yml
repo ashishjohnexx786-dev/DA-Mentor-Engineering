@@ -1,0 +1,93 @@
+name: Apply frozen Course 3 RC1 deploy upload
+
+on:
+  push:
+    branches: [c3-rc1-strict-sync]
+    paths: ['C3_RC1_DEPLOY_UPLOAD.zip']
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: c3-rc1-strict-sync
+          fetch-depth: 0
+
+      - name: Verify exact upload and extract
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo 'e99e34412044bd20fa04fb059328abf16f9ec85f2a71b9288f210039ca0224c1  C3_RC1_DEPLOY_UPLOAD.zip' | sha256sum -c -
+          rm -rf /tmp/c3-rc1-deploy
+          mkdir -p /tmp/c3-rc1-deploy
+          unzip -q C3_RC1_DEPLOY_UPLOAD.zip -d /tmp/c3-rc1-deploy
+          for f in index.html curriculum.js manifest.webmanifest service-worker.js icon.svg DEPLOY_MANIFEST.json RC1_DEPLOYMENT_TRANSFORM_QA.json assets-pack.js assets-pack-2.js assets-pack-3.js assets-pack-4.js assets-pack-5.js assets-pack-6.js assets-pack-7.js; do
+            test -s "/tmp/c3-rc1-deploy/$f"
+          done
+
+      - name: Strict RC1 payload QA before replacement
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check /tmp/c3-rc1-deploy/curriculum.js
+          python - <<'PY'
+          import base64, glob, hashlib, json, pathlib, re
+          d=pathlib.Path('/tmp/c3-rc1-deploy')
+          h=(d/'index.html').read_text()
+          c=(d/'curriculum.js').read_text()
+          sw=(d/'service-worker.js').read_text()
+          assert 'daMentorDataEngineering.v1' in h
+          assert 'final_score' not in h
+          assert '>=85' not in h and '85/100' not in h
+          assert 'No overall numeric result can compensate for a failed competency.' in h
+          for marker in ['final_event_clean','final_event_incident','final_event_recovery','final_event_change','final_event_revalidate_defend','final_evidence_packet','final_fresh_variant','final_independent_defense','final_no_cf','final_reviewer_verified']:
+              assert marker in h, marker
+          assert '25:00' not in h and 'pomodoro' not in h.lower()
+          assert 'mentor-c3-rc1-strict-2026-09-11-v1' in sw
+          ids=re.findall(r'[\"\']id[\"\']\s*:\s*[\"\'](C3-\d{2}-L\d{2})[\"\']',c)
+          assert len(ids)==140 and len(set(ids))==140, (len(ids),len(set(ids)))
+          routes=re.findall(r'[\"\'](?:learn|practice|review)[\"\']\s*:\s*[\"\']([^\"\']+)[\"\']',c)
+          assert len(routes)==420, len(routes)
+          assets={}
+          for p in sorted(d.glob('assets-pack*.js')):
+              s=p.read_text()
+              m=re.search(r'Object\.assign\(window\.MENTOR_ASSETS\|\|\{\},(\{.*\})\);\s*$',s,re.S)
+              assert m, p.name
+              for k,v in json.loads(m.group(1)).items():
+                  assert k not in assets, k
+                  b=base64.b64decode(v['b'], validate=True)
+                  assert len(b)>0, k
+                  assets[k]=(len(b),hashlib.sha256(b).hexdigest())
+          assert len(assets)==186, len(assets)
+          assert sum(k.lower().endswith('.pdf') for k in assets)==136
+          assert sum(k.lower().endswith('.zip') for k in assets)==50
+          assert not any('C3_112' in k for k in assets)
+          for r in routes:
+              base=r.split('#',1)[0]
+              assert base in assets, r
+          print('PASS frozen RC1 strict payload: 140 lessons / 420 routes / 186 assets')
+          PY
+
+      - name: Replace stale root deployment atomically
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f assets-pack*.js index.html curriculum.js manifest.webmanifest service-worker.js icon.svg DEPLOY_MANIFEST.json RC1_DEPLOYMENT_TRANSFORM_QA.json
+          cp -a /tmp/c3-rc1-deploy/. .
+          rm -f C3_RC1_DEPLOY_UPLOAD.zip
+          node --check curriculum.js
+
+      - name: Commit synchronized RC1 deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Course 3 RC1 Sync'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'Apply frozen Course 3 RC1 strict Mentor deployment'
+          git push origin c3-rc1-strict-sync
