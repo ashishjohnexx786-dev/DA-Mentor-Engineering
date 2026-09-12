@@ -1,0 +1,91 @@
+name: C3 RC2 Full Hosted Parity TEMP
+
+on:
+  push:
+    branches:
+      - qa-c3-full-parity-20260912
+
+permissions:
+  contents: read
+
+jobs:
+  hosted-full-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v6
+      - name: Prove checkout is exact C3 RC2 authority and compare all hosted bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(sha256sum SHA256SUMS.txt | awk '{print $1}')" = "8ee3b85fac90449e253391a6fa87e2a8e7e4e9499c796939cdb4eea77103dda6"
+          test "$(sha256sum MANIFEST.csv | awk '{print $1}')" = "c4fcbaad28708643205dafa6438bc073612837ff8cbfdcb0dc47a21223c53654"
+          test "$(grep -cve '^$' SHA256SUMS.txt)" = "205"
+          sha256sum -c SHA256SUMS.txt
+
+          python - <<'PY'
+          from pathlib import Path
+          from concurrent.futures import ThreadPoolExecutor, as_completed
+          from urllib.request import Request, urlopen
+          from urllib.parse import quote
+          import hashlib, os, time
+
+          owner=os.environ['GITHUB_REPOSITORY_OWNER']
+          repo=os.environ['GITHUB_REPOSITORY'].split('/',1)[1]
+          run_sha=os.environ['GITHUB_SHA']
+          base=f'https://{owner}.github.io/{repo}/'
+
+          expected=[]
+          for line in Path('SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
+              if not line.strip(): continue
+              sha,rel=line.split('  ',1)
+              p=Path(rel)
+              assert p.is_file(), rel
+              b=p.read_bytes()
+              assert hashlib.sha256(b).hexdigest()==sha, rel
+              expected.append((rel,b,sha))
+          assert len(expected)==205, len(expected)
+
+          def check(item):
+              rel,b,sha=item
+              url=base+quote(rel,safe='/')+f'?qa={run_sha}-{sha[:12]}'
+              last=''
+              for attempt in range(1,5):
+                  try:
+                      req=Request(url,headers={'User-Agent':'five-course-runtime-certification/2026-09-12','Cache-Control':'no-cache','Pragma':'no-cache'})
+                      with urlopen(req,timeout=45) as r:
+                          status=getattr(r,'status',200); data=r.read()
+                      got=hashlib.sha256(data).hexdigest()
+                      if status==200 and got==sha and len(data)==len(b):
+                          return rel,True,None
+                      last=f'status={status} size={len(data)}/{len(b)} sha={got}/{sha}'
+                  except Exception as e:
+                      last=f'{type(e).__name__}: {e}'
+                  time.sleep(attempt*1.5)
+              return rel,False,last
+
+          failures=[]; passed=0
+          with ThreadPoolExecutor(max_workers=12) as ex:
+              futs=[ex.submit(check,x) for x in expected]
+              for fut in as_completed(futs):
+                  rel,ok,err=fut.result()
+                  if ok: passed+=1
+                  else:
+                      failures.append((rel,err)); print('FAIL',rel,err)
+
+          print('AUTHORITY_MANIFEST_FILES',len(expected))
+          print('HOSTED_EXACT_MATCH',passed)
+          print('HOSTED_MISMATCH',len(failures))
+          if failures:
+              for rel,err in failures[:40]: print('MISMATCH',rel,err)
+              raise SystemExit(1)
+
+          for rel in ['SHA256SUMS.txt','MANIFEST.csv']:
+              b=Path(rel).read_bytes(); sha=hashlib.sha256(b).hexdigest()
+              req=Request(base+rel+f'?qa={run_sha}-{sha[:12]}',headers={'User-Agent':'five-course-runtime-certification/2026-09-12','Cache-Control':'no-cache'})
+              with urlopen(req,timeout=45) as r: data=r.read()
+              assert hashlib.sha256(data).hexdigest()==sha and len(data)==len(b), rel
+              print('CONTROL_FILE_HOSTED_EXACT',rel,sha)
+
+          print('C3 RC2 LIVE GITHUB PAGES FULL 205/205 AUTHORITY BYTE PARITY PASS')
+          PY
