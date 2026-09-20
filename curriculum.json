@@ -21,7 +21,18 @@
           "id": "C3-00-L01",
           "title": "Role shift: analyst scripts -> engineering systems",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "HashiCorp - Introduction to Terraform",
+              "url": "https://www.youtube.com/watch?v=ZFLWA1kQ3ls",
+              "scope": "0:30-3:26 IaC/Terraform; 3:26-10:13 Day 0/1/2; 21:19-22:23 providers"
+            },
+            {
+              "name": "Monte Carlo - Data Observability",
+              "url": "https://www.youtube.com/watch?v=Lt8_s8ywEAA",
+              "scope": "Optional visual - no verified bounded range"
+            }
+          ],
           "planningHours": [
             3,
             5
@@ -62,6 +73,11 @@
               "name": "GNU Bash Reference Manual",
               "url": "https://www.gnu.org/software/bash/manual/bash.pdf",
               "scope": "Redirections + pipelines + exit status"
+            },
+            {
+              "name": "freeCodeCamp - Command Line Basics for Beginners (2026)",
+              "url": "https://www.youtube.com/watch?v=mABpAI-pCw0",
+              "scope": "30:18-43:32: echo/cat and file inspection. Course adds pipes, stderr, grep, wc, head/tail and validation."
             }
           ],
           "planningHours": [
@@ -114,6 +130,11 @@
               "name": "Python 3.14 - Installing modules",
               "url": "https://docs.python.org/3.14/installing/",
               "scope": "pip install + requirements"
+            },
+            {
+              "name": "Corey Schafer - Virtual environments for Mac and Linux",
+              "url": "https://www.youtube.com/watch?v=Kg1Yvry_Ydk",
+              "scope": "Optional visual - no verified bounded range. Use the Linux commands inside WSL. Activate the repository environment before installing or running Python dependencies."
             }
           ],
           "planningHours": [
@@ -130,6 +151,11 @@
               "name": "Python - Modules and packages",
               "url": "https://docs.python.org/3/tutorial/modules.html",
               "scope": "Modules + packages"
+            },
+            {
+              "name": "Luke Barousse - Python for Data Analytics",
+              "url": "https://www.youtube.com/watch?v=wUSDVGivd-8",
+              "scope": "03:12:46-03:40:05"
             }
           ],
           "planningHours": [
@@ -172,6 +198,16 @@
               "name": "Python - Errors and Exceptions",
               "url": "https://docs.python.org/3/tutorial/errors.html",
               "scope": "Exceptions + handling"
+            },
+            {
+              "name": "Corey Schafer - Try/Except Blocks",
+              "url": "https://www.youtube.com/watch?v=NIWwJbo-9_8",
+              "scope": "OPTIONAL visual - no verified bounded range. Use only for try/except demonstration; learner book + practice are required."
+            },
+            {
+              "name": "PyCon US 2025 - Building Resilient Data Pipelines: The Power of Idempotency",
+              "url": "https://www.youtube.com/watch?v=kT8YWX4NE2o",
+              "scope": "OPTIONAL visual - no verified bounded range. Use only for idempotency/testing context; learner book + tests are required."
             }
           ],
           "planningHours": [
@@ -246,7 +282,13 @@
           "id": "C3-00-L12",
           "title": "Idempotence, reproducibility and runbooks",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PyCon US 2025 - Building Resilient Data Pipelines: The Power of Idempotency",
+              "url": "https://www.youtube.com/watch?v=kT8YWX4NE2o",
+              "scope": "OPTIONAL visual - no verified bounded range. Use only for idempotency/testing context; learner book + tests are required."
+            }
+          ],
           "planningHours": [
             3,
             5
@@ -357,6 +399,11 @@
               "name": "Requests Quickstart",
               "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
               "scope": "Timeouts + response content + raise_for_status"
+            },
+            {
+              "name": "Corey Schafer - Python Requests tutorial",
+              "url": "https://www.youtube.com/watch?v=tb8gHvYlCFs",
+              "scope": "Optional visual - no verified bounded range. Focus on HTTP requests, response status, JSON and authentication. Practise retries and pagination with the supplied local service; this recording does not replace those controls."
             }
           ],
           "planningHours": [
@@ -531,6 +578,11 @@
               "name": "pytest documentation",
               "url": "https://docs.pytest.org/en/stable/",
               "scope": "Getting started + assertions"
+            },
+            {
+              "name": "Data Engineering Zoomcamp - ingestion with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "Optional visual - no verified bounded range. Focus on source acquisition, incremental loading and replay. The supplied exercises define their own raw identity and progress contracts."
             }
           ],
           "planningHours": [
@@ -585,6 +637,11 @@
               "name": "PostgreSQL - Window Functions",
               "url": "https://www.postgresql.org/docs/current/tutorial-window.html",
               "scope": "Window ordering and row_number"
+            },
+            {
+              "name": "Deterministic transformations and production SQL style - retained visual",
+              "url": "https://www.youtube.com/watch?v=JQYz-8sl1aQ",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -632,6 +689,11 @@
               "name": "dbt - Staging best practices",
               "url": "https://docs.getdbt.com/best-practices/how-we-structure/2-staging",
               "scope": "Staging models + naming + no-joins/no-aggregations guidance"
+            },
+            {
+              "name": "dbt-style project anatomy, sources and dependency graph - retained visual",
+              "url": "https://www.youtube.com/watch?v=2dYDS4OQbT0",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -648,6 +710,11 @@
               "name": "dbt - Materializations",
               "url": "https://docs.getdbt.com/docs/build/materializations",
               "scope": "Materialization types and configuration"
+            },
+            {
+              "name": "Incremental models, materialization, documentation and handoff - retained visual",
+              "url": "https://www.youtube.com/watch?v=JQYz-8sl1aQ",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -669,6 +736,11 @@
               "name": "dbt - Unit tests",
               "url": "https://docs.getdbt.com/docs/build/unit-tests",
               "scope": "Concept boundary only"
+            },
+            {
+              "name": "Executable data tests, quality severity and CI boundaries - retained visual",
+              "url": "https://www.youtube.com/watch?v=bvZ-rJm7uMU",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -774,6 +846,11 @@
               "name": "dbt - Introduction",
               "url": "https://docs.getdbt.com/docs/introduction",
               "scope": "Use only for dbt project context"
+            },
+            {
+              "name": "TechLake - DWH Tutorial 6: Star Schema in Dimensional Modeling",
+              "url": "https://www.youtube.com/watch?v=vdRMTa6t1dM",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only to visualize star schema, facts and dimensions; the learner book + PostgreSQL lab are the required route."
             }
           ],
           "planningHours": [
@@ -842,6 +919,21 @@
               "name": "GitHub - Build and test Python",
               "url": "https://docs.github.com/en/actions/tutorials/build-and-test-code/python",
               "scope": "Workflow + pytest job pattern"
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "GitHub - Beginner 2026 compilation",
+              "url": "https://www.youtube.com/watch?v=zZuqjoLEYzo",
+              "scope": "GitHub Actions 07:54-15:45; GitHub security 15:45-20:28 (publisher chapters)"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
             }
           ],
           "planningHours": [
@@ -870,6 +962,16 @@
               "name": "Apache Airflow 3.3.1 - Architecture Overview",
               "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
               "scope": "Read Workloads + Control Flow. Purpose: see DAG/task/run architecture."
+            },
+            {
+              "name": "DataTalksClub / Timothy Davis - How to write data pipelines with Apache Airflow 3.0",
+              "url": "https://www.youtube.com/watch?v=v_jbmhVWBvM",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Astronomer - Airflow 101: Essential Tips for Beginners (retained from earlier route)",
+              "url": "https://www.youtube.com/watch?v=5SFVDr6F4vg",
+              "scope": "Optional visual - no verified bounded range; older visual, not current syntax authority"
             }
           ],
           "planningHours": [
@@ -954,6 +1056,16 @@
               "name": "Airflow Connections",
               "url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html",
               "scope": "Focus: conn_id and external-system auth boundary."
+            },
+            {
+              "name": "DataTalksClub / Timothy Davis - How to write data pipelines with Apache Airflow 3.0",
+              "url": "https://www.youtube.com/watch?v=v_jbmhVWBvM",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Astronomer - Airflow 101: Essential Tips for Beginners (retained from earlier route)",
+              "url": "https://www.youtube.com/watch?v=5SFVDr6F4vg",
+              "scope": "Optional visual - no verified bounded range; older visual, not current syntax authority"
             }
           ],
           "planningHours": [
@@ -1017,6 +1129,16 @@
               "name": "Astronomer - Sensors guide",
               "url": "https://www.astronomer.io/docs/learn/what-is-a-sensor",
               "scope": "Focus: poke/reschedule/deferrable sensor choices and readiness."
+            },
+            {
+              "name": "DataTalksClub / Timothy Davis - How to write data pipelines with Apache Airflow 3.0",
+              "url": "https://www.youtube.com/watch?v=v_jbmhVWBvM",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Astronomer - Airflow 101: Essential Tips for Beginners (retained from earlier route)",
+              "url": "https://www.youtube.com/watch?v=5SFVDr6F4vg",
+              "scope": "Optional visual - no verified bounded range; older visual, not current syntax authority"
             }
           ],
           "planningHours": [
@@ -1033,6 +1155,21 @@
               "name": "Astronomer - Rerunning DAGs",
               "url": "https://www.astronomer.io/docs/learn/rerunning-dags",
               "scope": "Focus: clear/rerun mechanics; course controls decide idempotent side effects."
+            },
+            {
+              "name": "DataTalksClub / Timothy Davis - How to write data pipelines with Apache Airflow 3.0",
+              "url": "https://www.youtube.com/watch?v=v_jbmhVWBvM",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Astronomer - Airflow 101: Essential Tips for Beginners (retained from earlier route)",
+              "url": "https://www.youtube.com/watch?v=5SFVDr6F4vg",
+              "scope": "Optional visual - no verified bounded range; older visual, not current syntax authority"
+            },
+            {
+              "name": "Incremental processing and safe reruns - retained visual",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -1075,6 +1212,31 @@
               "name": "Airflow CLI - dags test",
               "url": "https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html",
               "scope": "Focus: `airflow dags test <DAG_ID> <LOGICAL_DATE>`."
+            },
+            {
+              "name": "DataTalksClub / Timothy Davis - How to write data pipelines with Apache Airflow 3.0",
+              "url": "https://www.youtube.com/watch?v=v_jbmhVWBvM",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Astronomer - Airflow 101: Essential Tips for Beginners (retained from earlier route)",
+              "url": "https://www.youtube.com/watch?v=5SFVDr6F4vg",
+              "scope": "Optional visual - no verified bounded range; older visual, not current syntax authority"
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "Great Expectations tutorial",
+              "url": "https://www.youtube.com/watch?v=oxOj30rl_xs",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
             }
           ],
           "planningHours": [
@@ -1117,6 +1279,31 @@
               "name": "Airflow Architecture Overview",
               "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
               "scope": "Focus: production components vs local standalone mental model."
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "Fabric Git integration + Python CI/CD deployment",
+              "url": "https://www.youtube.com/watch?v=dsEA4HG7TtI",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
+            },
+            {
+              "name": "Google Cloud Tech - OpenTelemetry",
+              "url": "https://www.youtube.com/watch?v=RjX7t-b04hE",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Monte Carlo - Data Observability",
+              "url": "https://www.youtube.com/watch?v=Lt8_s8ywEAA",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -1145,6 +1332,16 @@
               "name": "AWS S3 object model",
               "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingObjects.html",
               "scope": "Read object/key/metadata concepts. Purpose: reinforce object storage vs local filesystem; vendor specifics remain secondary."
+            },
+            {
+              "name": "Vijay Perepa - Microsoft Fabric Data Engineering Explained: Lakehouse, Spark and OneLake Architecture",
+              "url": "https://www.youtube.com/watch?v=vWdUjrxOYC4",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "endjin - Microsoft Fabric: Lakehouse & Medallion Architecture - Part 1",
+              "url": "https://www.youtube.com/watch?v=x_CvCwSbRZI",
+              "scope": "02:10-04:43 - Fabric lakehouse and OneLake table/file structure"
             }
           ],
           "planningHours": [
@@ -1166,6 +1363,11 @@
               "name": "Apache Avro specification",
               "url": "https://avro.apache.org/docs/current/specification/",
               "scope": "Use schema + row-oriented serialization sections when comparing interchange/event use cases."
+            },
+            {
+              "name": "Visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "03:06-05:43 row vs column + row groups"
             }
           ],
           "planningHours": [
@@ -1187,6 +1389,16 @@
               "name": "Apache Parquet file format",
               "url": "https://parquet.apache.org/docs/file-format/",
               "scope": "Use row-group/column-chunk/file-metadata structure to connect physical layout to engine reads."
+            },
+            {
+              "name": "Visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "05:01-07:30 row groups + projection/predicate"
+            },
+            {
+              "name": "Visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "07:30-10:04 file size + compression"
             }
           ],
           "planningHours": [
@@ -1203,6 +1415,11 @@
               "name": "Apache Arrow Parquet datasets",
               "url": "https://arrow.apache.org/docs/python/parquet.html",
               "scope": "Use Partitioned Datasets section: directory partitions, dataset read/write, and filter/pruning reasoning."
+            },
+            {
+              "name": "Optional visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "05:01-10:04 row groups/projection/file-size context; this video does NOT teach partition strategy. Official partition docs + book are required."
             }
           ],
           "planningHours": [
@@ -1329,6 +1546,16 @@
               "name": "delta-rs - Merging a Table",
               "url": "https://delta-io.github.io/delta-rs/usage/merging-tables/",
               "scope": "Use dt.merge/TableMerger matched-update + unmatched-insert patterns and merge performance notes."
+            },
+            {
+              "name": "Optional visual: Databricks - Deep-Dive into Delta Lake",
+              "url": "https://www.youtube.com/watch?v=de-6a6Bfw6E",
+              "scope": "No independently verified bounded chapter range assigned; MERGE/source-key safety comes from the book + current official docs."
+            },
+            {
+              "name": "Optional visual - no verified bounded range: Databricks - Unpacking the Transaction Log",
+              "url": "https://www.youtube.com/watch?v=lXlBJdehsdw",
+              "scope": "Conceptual Delta transaction-log/version-state visual; learner book + official docs remain authority."
             }
           ],
           "planningHours": [
@@ -1366,6 +1593,21 @@
               "name": "Delta Lake documentation",
               "url": "https://docs.delta.io/",
               "scope": "Use lakehouse/table semantics as architecture reference; bronze/silver/gold contract design remains course-built and vendor-neutral."
+            },
+            {
+              "name": "Microsoft Power BI - Learn Together: Organize a Fabric lakehouse using medallion architecture design",
+              "url": "https://www.youtube.com/watch?v=gqTWFBzgAlg",
+              "scope": "09:55-42:55 - medallion principles, formats, movement and Fabric implementation"
+            },
+            {
+              "name": "endjin - Microsoft Fabric: Lakehouse & Medallion Architecture - Part 1",
+              "url": "https://www.youtube.com/watch?v=x_CvCwSbRZI",
+              "scope": "05:19-09:50 - medallion rationale through replayability/idempotency"
+            },
+            {
+              "name": "Optional visual with publisher chapter markers: Medallion Architecture in Databricks - Bronze, Silver, Gold",
+              "url": "https://www.youtube.com/watch?v=cyDLRr24mBs",
+              "scope": "00:00-01:36 medallion concept; implementation chapters later in the video. UI/vendor details are supplementary."
             }
           ],
           "planningHours": [
@@ -1387,6 +1629,11 @@
               "name": "delta-rs small-file compaction",
               "url": "https://delta-io.github.io/delta-rs/usage/optimize/small-file-compaction-with-optimize/",
               "scope": "Use optimize vs vacuum distinction and safe maintenance workflow."
+            },
+            {
+              "name": "Optional visual - no verified bounded range: Databricks - How Delta Lake Supercharges Data Lakes",
+              "url": "https://www.youtube.com/watch?v=u1VfOiHVeMI",
+              "scope": "Conceptual Delta/lakehouse visual; learner book + official docs remain current syntax/runtime authority."
             }
           ],
           "planningHours": [
@@ -1488,6 +1735,11 @@
               "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Use the DataFrames/SQL demonstration when a visual walkthrough helps."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "DataFrame reading and schema-oriented workflow"
             }
           ],
           "planningHours": [
@@ -1509,6 +1761,11 @@
               "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp - internals of GroupBy and joins",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Watch the join-internals segment linked from the module; preserve grain checks from the book."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "Join strategy context"
             }
           ],
           "planningHours": [
@@ -1530,6 +1787,11 @@
               "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp Spark module",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Use the DataFrames/SQL material for aggregation/window reinforcement."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=r_Sf6fCB40c",
+              "scope": "groupBy/shuffle context"
             }
           ],
           "planningHours": [
@@ -1546,6 +1808,11 @@
               "name": "Spark SQL null semantics",
               "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "DataFrame reading and schema-oriented workflow"
             }
           ],
           "planningHours": [
@@ -1567,6 +1834,11 @@
               "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Use the Parquet/repartition exercise as visual reinforcement."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=r_Sf6fCB40c",
+              "scope": "Parquet read/write and partitioned data context"
             }
           ],
           "planningHours": [
@@ -1583,6 +1855,11 @@
               "name": "Spark SQL programming guide",
               "url": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "DataFrame/Spark SQL transformation examples"
             }
           ],
           "planningHours": [
@@ -1745,6 +2022,21 @@
               "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Use packaging/submission examples only as reinforcement; learner package stays authoritative."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=r_Sf6fCB40c",
+              "scope": "Review the flow, then close video and build independently"
+            },
+            {
+              "name": "Learn Microsoft Fabric with Will - DP-700 Exam Full Course",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "03:12:43-03:30:05 - hands-on PySpark"
+            },
+            {
+              "name": "Aleksi Partanen - Learn Microsoft Fabric Notebooks in 2026 - Full Course!",
+              "url": "https://www.youtube.com/watch?v=qoVhkiU_XGc",
+              "scope": "54:23-01:00:37 - Spark SQL in Fabric notebooks"
             }
           ],
           "planningHours": [
@@ -1836,6 +2128,11 @@
               "name": "Apache Kafka 4.3 - Consumer offset tracking",
               "url": "https://kafka.apache.org/43/implementation/distribution/",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Confluent Developer - Consumers | Apache Kafka 101 (2025 Edition)",
+              "url": "https://www.youtube.com/watch?v=mHaVGVLyfB4",
+              "scope": "Verified chapters: 01:13-05:04 subscription/records/log; 05:04-06:31 commits; 06:31-08:04 groups/rebalancing"
             }
           ],
           "planningHours": [
@@ -1873,6 +2170,11 @@
               "name": "Debezium 3.6 Documentation",
               "url": "https://debezium.io/documentation/reference/3.6/index.html",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Binod Suman Academy - Change Data Capture (CDC) | Why & How | Use case | System Design",
+              "url": "https://www.youtube.com/watch?v=dN_11nBcv_A",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for CDC event/demo context; Debezium reference + learner book + CDC lab are required."
             }
           ],
           "planningHours": [
@@ -1889,6 +2191,11 @@
               "name": "Apache Kafka 4.3 - Consumer configs",
               "url": "https://kafka.apache.org/43/configuration/consumer-configs/",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Confluent - Apache Kafka Transactions: Message Delivery and Exactly-Once Semantics",
+              "url": "https://www.youtube.com/watch?v=Ki2D2o9aVl8",
+              "scope": "Optional visual - no verified bounded range; Jun Rao explains transactions and caveats"
             }
           ],
           "planningHours": [
@@ -1973,6 +2280,16 @@
               "name": "Databricks - Dive into Streaming Checkpoints & Best Practices (preserved R060)",
               "url": "https://community.databricks.com/t5/databricks-tv/dive-into-streaming-checkpoints-amp-best-practices-1-25-2023/ba-p/98943",
               "scope": "Checkpoint/restart examples; current Spark docs remain authority."
+            },
+            {
+              "name": "DataBeli - End-to-End Spark Streaming Project",
+              "url": "https://www.youtube.com/watch?v=SsE5ZfxtiOI",
+              "scope": "Verified chapters 32:29-57:42: Kafka connection and Spark Kafka consumption; vendor UI differs from local route"
+            },
+            {
+              "name": "Confluent Developer - Stream Processing | Apache Kafka 101 (2025 Edition)",
+              "url": "https://www.youtube.com/watch?v=vF5y17Pypds",
+              "scope": "Verified chapters 00:00-04:10: stream processing and batch/stream comparison"
             }
           ],
           "planningHours": [
@@ -2025,6 +2342,11 @@
               "name": "Spark 4.2 Structured Streaming guide",
               "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
               "scope": "Use query progress/state metrics and consumer-group lag evidence."
+            },
+            {
+              "name": "Confluent - Slow Consumers monitoring demo",
+              "url": "https://www.youtube.com/watch?v=XOtY1uUaf_Y",
+              "scope": "Optional visual - no verified bounded range; older UI but useful lag symptom visual"
             }
           ],
           "planningHours": [
@@ -2380,6 +2702,26 @@
               "name": "OpenLineage Data Quality Assertions",
               "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
               "scope": "whole relevant page"
+            },
+            {
+              "name": "Executable data tests, quality severity and CI boundaries - retained visual",
+              "url": "https://www.youtube.com/watch?v=bvZ-rJm7uMU",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "Great Expectations tutorial",
+              "url": "https://www.youtube.com/watch?v=oxOj30rl_xs",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
             }
           ],
           "planningHours": [
@@ -2396,6 +2738,21 @@
               "name": "OpenLineage Data Quality Assertions",
               "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
               "scope": "success vs severity section"
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "Great Expectations tutorial",
+              "url": "https://www.youtube.com/watch?v=oxOj30rl_xs",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
             }
           ],
           "planningHours": [
@@ -2433,6 +2790,16 @@
               "name": "Google SRE - Service Level Objectives",
               "url": "https://sre.google/sre-book/service-level-objectives/",
               "scope": "control measures + SLO design"
+            },
+            {
+              "name": "Monte Carlo - Data Observability",
+              "url": "https://www.youtube.com/watch?v=Lt8_s8ywEAA",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Google Cloud Tech - OpenTelemetry",
+              "url": "https://www.youtube.com/watch?v=RjX7t-b04hE",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -2533,6 +2900,16 @@
               "name": "Google SRE Workbook - Incident Response",
               "url": "https://sre.google/workbook/incident-response/",
               "scope": "roles/response workflow"
+            },
+            {
+              "name": "Google Cloud Tech - OpenTelemetry",
+              "url": "https://www.youtube.com/watch?v=RjX7t-b04hE",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Monte Carlo - Data Observability",
+              "url": "https://www.youtube.com/watch?v=Lt8_s8ywEAA",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -2554,6 +2931,26 @@
               "name": "GitHub Actions OIDC in cloud providers",
               "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers",
               "scope": "overview + trust conditions"
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "GitHub - Beginner 2026 compilation",
+              "url": "https://www.youtube.com/watch?v=zZuqjoLEYzo",
+              "scope": "GitHub Actions 07:54-15:45; GitHub security 15:45-20:28 (publisher chapters)"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
+            },
+            {
+              "name": "Azure RBAC visual walkthrough",
+              "url": "https://www.youtube.com/watch?v=c5u_AzSCsco",
+              "scope": "00:26-04:18 RBAC core through best practices"
             }
           ],
           "planningHours": [
@@ -2575,6 +2972,16 @@
               "name": "OneLake Security Overview",
               "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
               "scope": "whole relevant page"
+            },
+            {
+              "name": "Microsoft Purview Learn Live",
+              "url": "https://www.youtube.com/watch?v=Sb9uJLtXDGo",
+              "scope": "03:44-15:47 permissions; 40:21-52:44 lineage; 52:44-1:05:22 classification"
+            },
+            {
+              "name": "Azure RBAC visual walkthrough",
+              "url": "https://www.youtube.com/watch?v=c5u_AzSCsco",
+              "scope": "00:26-04:18 RBAC core through best practices"
             }
           ],
           "planningHours": [
@@ -2638,6 +3045,16 @@
               "name": "Terraform state locking",
               "url": "https://developer.hashicorp.com/terraform/language/state/locking",
               "scope": "whole relevant page"
+            },
+            {
+              "name": "HashiCorp - Introduction to Terraform",
+              "url": "https://www.youtube.com/watch?v=ZFLWA1kQ3ls",
+              "scope": "0:30-3:26 IaC/Terraform; 3:26-10:13 Day 0/1/2; 21:19-22:23 providers"
+            },
+            {
+              "name": "HashiCorp - Getting into Terraform, Part 1 (2026)",
+              "url": "https://www.youtube.com/watch?v=jT7X6-gjTU8",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -2654,6 +3071,21 @@
               "name": "Google SRE - Monitoring Distributed Systems",
               "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
               "scope": "why monitor + simplicity/golden signals"
+            },
+            {
+              "name": "Microsoft Learn - Start improving the reliability of your Azure workloads",
+              "url": "https://learn.microsoft.com/en-us/shows/azure-essentials-show/start-improving-the-reliability-of-your-azure-workloads--reliability-ep-1--well-architected-series",
+              "scope": "00:58-03:58 reliability/platform vs application; 03:58-09:27 building blocks; 11:08 architecture walkthrough"
+            },
+            {
+              "name": "Microsoft Learn - Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs; 11:41-33:10 reliability; 33:10-43:16 performance; 43:16-52:01 security; 57:40-1:02:44 cost"
+            },
+            {
+              "name": "Microsoft Developer - Start optimizing your Azure costs",
+              "url": "https://www.youtube.com/watch?v=5lELFRLGeQg",
+              "scope": "01:05-02:10 common cost issues; 02:10-04:00 design/provision/monitor/optimize; 04:00 onward monitoring/optimization"
             }
           ],
           "planningHours": [
@@ -2703,6 +3135,11 @@
               "name": "dbt model contracts",
               "url": "https://docs.getdbt.com/docs/mesh/govern/model-contracts",
               "scope": "Why define a contract + breaking changes"
+            },
+            {
+              "name": "Schema checks and data contracts - retained visual",
+              "url": "https://www.youtube.com/watch?v=ZIJB8cs-cJU",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -2719,6 +3156,16 @@
               "name": "Python 3.14 csv documentation",
               "url": "https://docs.python.org/3.14/library/csv.html",
               "scope": "reader/writer/DictReader sections"
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for architecture/ingestion context; learner book + official architecture reference + lab are required."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for file/CSV ingestion context; Python csv docs + learner book + lab are required."
             }
           ],
           "planningHours": [
@@ -2756,6 +3203,21 @@
               "name": "Delta Lake 4.4.0 release context",
               "url": "https://delta.io/blog/2026-08-20-simplifying-your-open-lakehouse-with-the-delta-kernel-and-the-uc-delta-apis/",
               "scope": "Delta-Spark now defaults to Spark 4.2"
+            },
+            {
+              "name": "Optional visual with publisher chapter markers: Medallion Architecture in Databricks - Bronze, Silver, Gold",
+              "url": "https://www.youtube.com/watch?v=cyDLRr24mBs",
+              "scope": "00:00-01:36 medallion concept; implementation chapters later in the video. UI/vendor details are supplementary."
+            },
+            {
+              "name": "Microsoft Power BI - Learn Together: Organize a Fabric lakehouse using medallion architecture design",
+              "url": "https://www.youtube.com/watch?v=gqTWFBzgAlg",
+              "scope": "09:55-42:55 - medallion principles, formats, movement and Fabric implementation"
+            },
+            {
+              "name": "endjin - Microsoft Fabric: Lakehouse & Medallion Architecture - Part 1",
+              "url": "https://www.youtube.com/watch?v=x_CvCwSbRZI",
+              "scope": "05:19-09:50 - medallion rationale through replayability/idempotency"
             }
           ],
           "planningHours": [
@@ -2772,6 +3234,16 @@
               "name": "dbt data tests",
               "url": "https://docs.getdbt.com/docs/build/data-tests",
               "scope": "data tests + relationship to model contracts"
+            },
+            {
+              "name": "Deterministic transformations and production SQL style - retained visual",
+              "url": "https://www.youtube.com/watch?v=JQYz-8sl1aQ",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
+            },
+            {
+              "name": "Executable data tests, quality severity and CI boundaries - retained visual",
+              "url": "https://www.youtube.com/watch?v=bvZ-rJm7uMU",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -2830,6 +3302,26 @@
               "name": "OpenLineage Data Quality Assertions",
               "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
               "scope": "success vs severity + assertion fields"
+            },
+            {
+              "name": "Source-to-target reconciliation - retained visual",
+              "url": "https://www.youtube.com/watch?v=7CrrXazV_8k",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
+            },
+            {
+              "name": "TechWorld with Nana - GitHub Actions concepts and CI/CD with Docker",
+              "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+              "scope": "Optional visual - no verified bounded range. English demonstration. Focus on workflow events, jobs, steps and seeing a failed check. Apply the course data-quality checks inside that workflow."
+            },
+            {
+              "name": "Great Expectations tutorial",
+              "url": "https://www.youtube.com/watch?v=oxOj30rl_xs",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "GitHub Actions desde cero - Spanish-language supplementary tutorial",
+              "url": "https://www.youtube.com/watch?v=sIhm4YOMK6Q",
+              "scope": "Optional Spanish-language visual - no verified bounded range. An English GitHub Actions demonstration is listed first."
             }
           ],
           "planningHours": [
@@ -2867,6 +3359,16 @@
               "name": "OneLake security overview",
               "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
               "scope": "control plane + data plane + role effects"
+            },
+            {
+              "name": "Microsoft Learn - Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs; 11:41-33:10 reliability; 33:10-43:16 performance; 43:16-52:01 security; 57:40-1:02:44 cost"
+            },
+            {
+              "name": "HashiCorp - Introduction to Vault",
+              "url": "https://www.youtube.com/watch?v=eA_9WwYwXp0",
+              "scope": "01:04-05:41 Vault goal, discovery/import/centralized access; 11:06-15:46 architecture; 18:45-20:10 auditing/policy"
             }
           ],
           "planningHours": [
@@ -2909,6 +3411,16 @@
               "name": "Google SRE Workbook - Incident Response",
               "url": "https://sre.google/workbook/incident-response/",
               "scope": "incident response chapter"
+            },
+            {
+              "name": "Google Cloud Tech - OpenTelemetry",
+              "url": "https://www.youtube.com/watch?v=RjX7t-b04hE",
+              "scope": "Optional visual - no verified bounded range"
+            },
+            {
+              "name": "Monte Carlo - Data Observability",
+              "url": "https://www.youtube.com/watch?v=Lt8_s8ywEAA",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -2925,6 +3437,16 @@
               "name": "GitHub - About README files",
               "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
               "scope": "what a README should communicate"
+            },
+            {
+              "name": "freeCodeCamp - Git & GitHub Crash Course for Beginners [2026]",
+              "url": "https://www.youtube.com/watch?v=mAFoROnOfHs",
+              "scope": "01:04-05:41 - bounded Git mental-model visual; project commands are in the course labs"
+            },
+            {
+              "name": "Microsoft Mechanics - Azure Well-Architected Framework",
+              "url": "https://www.youtube.com/watch?v=xDhaHSK7mgM",
+              "scope": "00:34-01:57 categories; 01:57-04:32 recommendations; 04:32-07:22 workload recommendations"
             }
           ],
           "planningHours": [
@@ -2941,6 +3463,21 @@
               "name": "DP-700 Study Guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
               "scope": "skills measured as of July 21, 2026"
+            },
+            {
+              "name": "Microsoft Learn - Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs; 11:41-33:10 reliability; 33:10-43:16 performance; 43:16-52:01 security; 57:40-1:02:44 cost"
+            },
+            {
+              "name": "Microsoft Learn - Start improving the reliability of your Azure workloads",
+              "url": "https://learn.microsoft.com/en-us/shows/azure-essentials-show/start-improving-the-reliability-of-your-azure-workloads--reliability-ep-1--well-architected-series",
+              "scope": "00:58-03:58 reliability/platform vs application; 03:58-09:27 building blocks; 11:08 architecture walkthrough"
+            },
+            {
+              "name": "Microsoft Developer - Start optimizing your Azure costs",
+              "url": "https://www.youtube.com/watch?v=5lELFRLGeQg",
+              "scope": "01:05-02:10 common cost issues; 02:10-04:00 design/provision/monitor/optimize; 04:00 onward monitoring/optimization"
             }
           ],
           "planningHours": [
