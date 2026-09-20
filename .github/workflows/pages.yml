@@ -1,4 +1,4 @@
-name: Deploy DA Mentor Engineering to GitHub Pages
+name: Deploy current Mentor to GitHub Pages
 
 on:
   push:
@@ -28,9 +28,7 @@ jobs:
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: '.'
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1200000

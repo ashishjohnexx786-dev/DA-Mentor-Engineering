@@ -1,15 +1,1 @@
-{
-  "name": "DA Mentor Engineering - Course 3",
-  "short_name": "Mentor Engineering",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#1F2937",
-  "icons": [
-    {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
-  ]
-}
+{"id": "./", "name": "Data Engineering Mentor \u00b7 Course 3 2026", "short_name": "DE Engineering", "start_url": "./#study", "scope": "./", "display": "standalone", "background_color": "#000000", "theme_color": "#000000", "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]}
