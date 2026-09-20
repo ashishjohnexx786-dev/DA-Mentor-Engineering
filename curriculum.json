@@ -23,28 +23,50 @@
           "bookPage": 6,
           "watch": [],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L02",
           "title": "Linux/WSL2 shell, paths and filesystem",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft - Install WSL",
+              "url": "https://learn.microsoft.com/en-us/windows/wsl/install",
+              "scope": "Use install + verify sections"
+            },
+            {
+              "name": "Microsoft - Set up a WSL development environment",
+              "url": "https://learn.microsoft.com/en-us/windows/wsl/setup/environment",
+              "scope": "File-storage guidance"
+            },
+            {
+              "name": "Microsoft - What is WSL? One Dev Question",
+              "url": "https://learn.microsoft.com/en-us/shows/one-dev-minute/what-is-the-windows-subsystem-for-linux-wsl--one-dev-question",
+              "scope": "00:00-end (short orientation)"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L03",
           "title": "Shell pipes, redirection and process basics",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "GNU Bash Reference Manual",
+              "url": "https://www.gnu.org/software/bash/manual/bash.pdf",
+              "scope": "Redirections + pipelines + exit status"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -53,54 +75,103 @@
           "bookPage": 15,
           "watch": [
             {
-              "name": "Instructor / official source 4",
+              "name": "Git - git status",
+              "url": "https://git-scm.com/docs/git-status",
+              "scope": "Synopsis + short status behavior"
+            },
+            {
+              "name": "Git - git switch",
+              "url": "https://git-scm.com/docs/git-switch",
+              "scope": "git switch -c"
+            },
+            {
+              "name": "GitHub - Hello World",
+              "url": "https://docs.github.com/en/get-started/using-github/hello-world",
+              "scope": "Branch -> commit -> pull request"
+            },
+            {
+              "name": "GitHub - How to create a pull request in 4 min",
               "url": "https://www.youtube.com/watch?v=nCKdihvneS0",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:17-00:42 concept; 00:59-02:27 demo; 02:27-end tips"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L05",
           "title": "Python virtual environments and dependency pinning",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14 - venv",
+              "url": "https://docs.python.org/3.14/library/venv.html",
+              "scope": "Creation, activation, recreation"
+            },
+            {
+              "name": "Python 3.14 - Installing modules",
+              "url": "https://docs.python.org/3.14/installing/",
+              "scope": "pip install + requirements"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L06",
           "title": "Python modules, packages and project structure",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python - Modules and packages",
+              "url": "https://docs.python.org/3/tutorial/modules.html",
+              "scope": "Modules + packages"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L07",
           "title": "Configuration, environment variables and secret boundaries",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14 - Command line and environment",
+              "url": "https://docs.python.org/3.14/using/cmdline.html",
+              "scope": "Environment variables / command line behavior"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L08",
           "title": "Structured logging and exception handling",
           "bookPage": 27,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python - Logging HOWTO",
+              "url": "https://docs.python.org/3/howto/logging.html",
+              "scope": "Basic logging + advanced logging flow"
+            },
+            {
+              "name": "Python - Errors and Exceptions",
+              "url": "https://docs.python.org/3/tutorial/errors.html",
+              "scope": "Exceptions + handling"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -109,34 +180,61 @@
           "bookPage": 30,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "pytest - API reference",
+              "url": "https://docs.pytest.org/en/latest/reference/reference.html",
+              "scope": "tmp_path + assertion behavior"
+            },
+            {
+              "name": "Tech With Tim - Pytest Tutorial",
               "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:00-07:13; 12:47-16:28"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L10",
           "title": "CLI design and reusable data utilities",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python - argparse",
+              "url": "https://docs.python.org/3/library/argparse.html",
+              "scope": "Parser basics + subcommands only if needed"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-00-L11",
           "title": "Docker and container mental model",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Docker - Get started",
+              "url": "https://docs.docker.com/get-started/",
+              "scope": "Image vs container + first run"
+            },
+            {
+              "name": "Docker Desktop for Windows",
+              "url": "https://docs.docker.com/desktop/setup/install/windows-install/",
+              "scope": "WSL2 backend install + verify"
+            },
+            {
+              "name": "Docker - Intro and Overview on-demand training",
+              "url": "https://www.docker.com/resources/docker-intro-and-overview-on-demand-training/",
+              "scope": "01:34-10:20; optional 29:57-32:59"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -145,8 +243,8 @@
           "bookPage": 39,
           "watch": [],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -167,28 +265,40 @@
           "bookPage": 6,
           "watch": [],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L02",
           "title": "CSV ingestion and defensive parsing",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 csv",
+              "url": "https://docs.python.org/3.14/library/csv.html",
+              "scope": "Reader/DictReader + newline guidance"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L03",
           "title": "JSON and nested-record ingestion",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 json",
+              "url": "https://docs.python.org/3.14/library/json.html",
+              "scope": "load/loads + encoder/decoder behavior"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -197,24 +307,40 @@
           "bookPage": 15,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Apache Arrow Python Parquet",
+              "url": "https://arrow.apache.org/docs/python/parquet.html",
+              "scope": "Parquet reading + metadata"
+            },
+            {
+              "name": "Mathew K Analytics - Comprehensive PyArrow Training",
               "url": "https://www.youtube.com/watch?v=4NdhT9JXWTo",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "06:09-09:40"
+            },
+            {
+              "name": "DataTalksClub 2026 dlt ingestion workshop",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "not learner-assigned"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L05",
           "title": "REST APIs: requests, status codes and contracts",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Requests Quickstart",
+              "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+              "scope": "Timeouts + response content + raise_for_status"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -223,14 +349,19 @@
           "bookPage": 21,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Requests Authentication",
+              "url": "https://requests.readthedocs.io/en/latest/user/authentication/",
+              "scope": "Authentication section"
+            },
+            {
+              "name": "Turtle Code - Mastering API Pagination with Python & FastAPI",
               "url": "https://www.youtube.com/watch?v=powvddxPs_c",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:00-end; whole video is pagination"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -239,24 +370,35 @@
           "bookPage": 24,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "urllib3 Retry",
+              "url": "https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html",
+              "scope": "Retry parameters + backoff_jitter"
+            },
+            {
+              "name": "CodeLucky - Retry Strategies: Exponential Backoff & Jitter Explained",
               "url": "https://www.youtube.com/watch?v=NByH-cau97A",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:21-03:34"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L08",
           "title": "Database extraction and safe query boundaries",
           "bookPage": 27,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14 sqlite3",
+              "url": "https://docs.python.org/3.14/library/sqlite3.html",
+              "scope": "Placeholders + execute/query examples"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -265,8 +407,8 @@
           "bookPage": 30,
           "watch": [],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -275,14 +417,19 @@
           "bookPage": 33,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Microsoft - Incremental copy using watermark",
+              "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+              "scope": "High-level solution + watermark steps"
+            },
+            {
+              "name": "Cloudpandith - ADF Incremental Load Using Watermark Table",
               "url": "https://www.youtube.com/watch?v=U86eFO_1oeU",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:00-end; whole lesson is incremental/watermark"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -291,24 +438,35 @@
           "bookPage": 36,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Debezium MySQL Connector - stable",
+              "url": "https://debezium.io/documentation/reference/stable/connectors/mysql.html",
+              "scope": "Change events + event structure"
+            },
+            {
+              "name": "Binod Suman Academy - Change Data Capture (CDC): Why & How",
               "url": "https://www.youtube.com/watch?v=dN_11nBcv_A",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:00-end; whole video is CDC concept/system design"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L12",
           "title": "Schema drift, compatibility, temporal/time-zone correctness and quarantine",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14 datetime",
+              "url": "https://docs.python.org/3.14/library/datetime.html",
+              "scope": "Aware/naive objects + timezone"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -317,18 +475,24 @@
           "bookPage": 42,
           "watch": [],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-01-L14",
           "title": "Ingestion testing, reconciliation and backfills",
           "bookPage": 45,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pytest documentation",
+              "url": "https://docs.pytest.org/en/stable/",
+              "scope": "Getting started + assertions"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -349,64 +513,119 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "IBM - ETL vs ELT",
+              "url": "https://www.ibm.com/think/topics/etl-vs-elt",
+              "scope": "Read comparison/when-to-use sections"
+            },
+            {
+              "name": "IBM Technology - ETL vs ELT",
               "url": "https://www.youtube.com/watch?v=KIv2Na2-u24",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Whole short concept video; Bridge concept only"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L02",
           "title": "Production SQL style: readability and determinism",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DuckDB - SELECT",
+              "url": "https://duckdb.org/docs/stable/sql/statements/select.html",
+              "scope": "Projection/filter/order behavior"
+            },
+            {
+              "name": "PostgreSQL - Window Functions",
+              "url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+              "scope": "Window ordering and row_number"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L03",
           "title": "dbt project anatomy and dependency graph",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt Developer Hub - Introduction",
+              "url": "https://docs.getdbt.com/docs/introduction",
+              "scope": "Introduction + ref/source project concepts"
+            },
+            {
+              "name": "dbt Labs - dbt explained (official 2-minute explainer)",
+              "url": "https://www.getdbt.com/blog/dbt-explained",
+              "scope": "Embedded 2-minute official explainer + How dbt works section"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L04",
           "title": "Sources, staging models and naming contracts",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt - Sources",
+              "url": "https://docs.getdbt.com/docs/build/sources",
+              "scope": "Source declarations + source()"
+            },
+            {
+              "name": "dbt - Staging best practices",
+              "url": "https://docs.getdbt.com/best-practices/how-we-structure/2-staging",
+              "scope": "Staging models + naming + no-joins/no-aggregations guidance"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L05",
           "title": "Model materializations and rebuild strategy",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt - Materializations",
+              "url": "https://docs.getdbt.com/docs/build/materializations",
+              "scope": "Materialization types and configuration"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L06",
           "title": "Data tests: uniqueness, not-null, relationships and custom assertions",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt - Data tests",
+              "url": "https://docs.getdbt.com/docs/build/data-tests",
+              "scope": "unique/not_null/relationships/accepted_values/custom"
+            },
+            {
+              "name": "dbt - Unit tests",
+              "url": "https://docs.getdbt.com/docs/build/unit-tests",
+              "scope": "Concept boundary only"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -415,14 +634,19 @@
           "bookPage": 24,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "dbt - Incremental models",
+              "url": "https://docs.getdbt.com/docs/build/incremental-models",
+              "scope": "Incremental model contract"
+            },
+            {
+              "name": "David Data - dbt incremental models",
               "url": "https://www.youtube.com/watch?v=xOaB5swu_Pk",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:30-05:16 concepts; 09:21-11:17 implementation/full refresh"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -431,14 +655,19 @@
           "bookPage": 27,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "dbt - Snapshots",
+              "url": "https://docs.getdbt.com/docs/build/snapshots",
+              "scope": "Snapshot semantics + timestamp strategy"
+            },
+            {
+              "name": "Kahan Data Solutions - dbt snapshots",
               "url": "https://www.youtube.com/watch?v=SNtM_RUa5G4",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:51-03:55 concepts; 03:55-09:29 build/change demo"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -447,14 +676,19 @@
           "bookPage": 30,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "dbt - Jinja and macros",
+              "url": "https://docs.getdbt.com/docs/build/jinja-macros",
+              "scope": "Jinja variables/macros/ref boundary"
+            },
+            {
+              "name": "Kahan Data Solutions - Jinja in dbt",
               "url": "https://www.youtube.com/watch?v=dXSQHvyOh58",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "01:02-04:40 variables; 07:54-end conditions"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -463,34 +697,56 @@
           "bookPage": 33,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "dbt - Documentation",
+              "url": "https://docs.getdbt.com/docs/build/documentation",
+              "scope": "Descriptions + docs generate/serve"
+            },
+            {
+              "name": "Mukesh Singh - dbt layered approach, docs and lineage",
               "url": "https://www.youtube.com/watch?v=y2RpcuWjk94",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "00:32-03:24 layers; 05:44-07:39 docs/lineage"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L11",
           "title": "Dimensional model implementation and grain enforcement",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Fabric - Dimensional modeling overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
+              "scope": "Fact/dimension/grain design"
+            },
+            {
+              "name": "dbt - Introduction",
+              "url": "https://docs.getdbt.com/docs/introduction",
+              "scope": "Use only for dbt project context"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L12",
           "title": "Surrogate keys, late dimensions and referential integrity",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Fabric - Load tables in a dimensional model",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-load-tables",
+              "scope": "Surrogate/SCD loading concepts"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -499,24 +755,45 @@
           "bookPage": 42,
           "watch": [
             {
-              "name": "Instructor / official source 3",
+              "name": "DuckDB - EXPLAIN",
+              "url": "https://duckdb.org/docs/stable/guides/meta/explain",
+              "scope": "EXPLAIN operators/cardinality/scan"
+            },
+            {
+              "name": "PostgreSQL - Using EXPLAIN",
+              "url": "https://www.postgresql.org/docs/current/using-explain.html",
+              "scope": "Plan nodes/costs/row estimates"
+            },
+            {
+              "name": "Alex The Analyst - SQL Beginner to Advanced",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Use only relevant advanced-SQL/project section, not plan semantics"
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-02-L14",
           "title": "CI checks and curated serving-model handoff",
           "bookPage": 45,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt - Continuous integration",
+              "url": "https://docs.getdbt.com/docs/deploy/continuous-integration",
+              "scope": "CI checks + safe changes"
+            },
+            {
+              "name": "GitHub - Build and test Python",
+              "url": "https://docs.github.com/en/actions/tutorials/build-and-test-code/python",
+              "scope": "Workflow + pytest job pattern"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -535,130 +812,263 @@
           "id": "C3-03-L01",
           "title": "Workflow orchestration and DAG design",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Airflow 3.3.1 - Architecture Overview",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
+              "scope": "Read Workloads + Control Flow. Purpose: see DAG/task/run architecture."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L02",
           "title": "Airflow setup, standalone mode and project structure",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow 3.3.1 - Installation from PyPI",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html",
+              "scope": "Use reproducible constraints install + pip check."
+            },
+            {
+              "name": "Astronomer - Building ETL/ELT pipelines with Airflow 3",
+              "url": "https://www.astronomer.io/events/webinars/etl-elt-airflow-3-workshop-video/",
+              "scope": "Recorded 26 Mar 2026; 90 min. Focus: end-to-end workflow, quality, asset-aware scheduling/backfills. No verified chapter timestamp published on page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L03",
           "title": "DAG authoring with TaskFlow and tasks",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow 3 Task SDK / TaskFlow tutorial",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html",
+              "scope": "Use public airflow.sdk @dag/@task pattern and graph visualization."
+            },
+            {
+              "name": "Astronomer - Writing functional DAGs with decorators",
+              "url": "https://www.astronomer.io/events/webinars/writing-functional-dags-with-decorators-video/",
+              "scope": "Focus: decorator/TaskFlow DAG authoring and dependencies. Timestamp not verifiable from current landing page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L04",
           "title": "Schedules, logical dates and data intervals",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow 3.3.1 Scheduler / Dag Runs",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/concepts/scheduler.html",
+              "scope": "Focus: scheduler triggers after interval end; pair with data_interval_start/end."
+            },
+            {
+              "name": "Astronomer - Scheduling in Airflow: Comprehensive Introduction",
+              "url": "https://www.astronomer.io/events/webinars/scheduling-in-airflow-comprehensive-intro-video/",
+              "scope": "Recorded 27 Jun 2023. Focus: scheduling terminology, time/event schedules, timetables. No verified chapter timestamps on page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L05",
           "title": "Parameters, variables, connections and secret boundaries",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow Params",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/params.html",
+              "scope": "Focus: validated per-run configuration."
+            },
+            {
+              "name": "Airflow Connections",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html",
+              "scope": "Focus: conn_id and external-system auth boundary."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L06",
           "title": "Retries, timeouts and failure callbacks",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow callbacks / task failure behavior",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/callbacks.html",
+              "scope": "Focus: failure callback as operational hook, not business retry logic."
+            },
+            {
+              "name": "Astronomer - Debugging Airflow DAGs",
+              "url": "https://www.astronomer.io/events/webinars/best-practices-for-debugging-your-airflow-dags-video/",
+              "scope": "Focus: failure diagnosis/log evidence. Timestamp not verifiable from current page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L07",
           "title": "Catchup, backfills and controlled reprocessing",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow Backfill / CLI reference",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html",
+              "scope": "Focus: backfill create and reprocessing behavior."
+            },
+            {
+              "name": "Astronomer - DAG Versioning and Backfills",
+              "url": "https://www.astronomer.io/events/webinars/apache-airflow-3-optimize-your-pipeline-developer-experience-video/",
+              "scope": "Recorded 15 May 2025. Focus topics: DAG versioning, supported backfills, quicker log access; no verified chapter timestamps on page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L08",
           "title": "Sensors and data-aware dependencies",
           "bookPage": 27,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow Deferrable Operators & Triggers",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html",
+              "scope": "Focus: release worker while waiting + triggerer behavior."
+            },
+            {
+              "name": "Astronomer - Sensors guide",
+              "url": "https://www.astronomer.io/docs/learn/what-is-a-sensor",
+              "scope": "Focus: poke/reschedule/deferrable sensor choices and readiness."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L09",
           "title": "Idempotent task design and partial reruns",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Astronomer - Rerunning DAGs",
+              "url": "https://www.astronomer.io/docs/learn/rerunning-dags",
+              "scope": "Focus: clear/rerun mechanics; course controls decide idempotent side effects."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L10",
           "title": "Pools, concurrency and resource limits",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow Pools",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html",
+              "scope": "Focus: pool slots and protecting scarce systems."
+            },
+            {
+              "name": "Astronomer - Airflow production best practices",
+              "url": "https://www.astronomer.io/events/webinars/best-practices-for-running-apache-airflow-in-production-video/",
+              "scope": "Focus: resource/concurrency/operational practices. Timestamp not verifiable from current page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L11",
           "title": "DAG testing and pre-deployment validation",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow Best Practices",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+              "scope": "Focus: DAG testing, import-time discipline and production-safe authoring."
+            },
+            {
+              "name": "Airflow CLI - dags test",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html",
+              "scope": "Focus: `airflow dags test <DAG_ID> <LOGICAL_DATE>`."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L12",
           "title": "Operational logs, metadata and troubleshooting",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow FAQ - scheduling/troubleshooting",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/faq.html",
+              "scope": "Focus: discovery, graph, scheduling checks and evidence."
+            },
+            {
+              "name": "Astronomer - Debugging Airflow DAGs",
+              "url": "https://www.astronomer.io/events/webinars/best-practices-for-debugging-your-airflow-dags-video/",
+              "scope": "Focus: isolate failure from scheduler/run/task evidence. Timestamp not verifiable from current page."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-03-L13",
           "title": "Deployment patterns, recovery runbooks and handoff",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow DAG Bundles",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html",
+              "scope": "Focus: versioned DAG distribution/deployment boundary."
+            },
+            {
+              "name": "Airflow Architecture Overview",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
+              "scope": "Focus: production components vs local standalone mental model."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -677,70 +1087,132 @@
           "id": "C3-04-L01",
           "title": "Object storage and namespace mental model",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "AWS S3 object model",
+              "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingObjects.html",
+              "scope": "Read object/key/metadata concepts. Purpose: reinforce object storage vs local filesystem; vendor specifics remain secondary."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L02",
           "title": "CSV, JSON, Avro and Parquet trade-offs",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Parquet overview",
+              "url": "https://parquet.apache.org/docs/overview/",
+              "scope": "Use the official column-oriented purpose/format overview; compare against CSV/JSON/Avro needs rather than declaring a universal winner."
+            },
+            {
+              "name": "Apache Avro specification",
+              "url": "https://avro.apache.org/docs/current/specification/",
+              "scope": "Use schema + row-oriented serialization sections when comparing interchange/event use cases."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L03",
           "title": "Columnar storage, statistics and compression",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Arrow - Reading/Writing Parquet",
+              "url": "https://arrow.apache.org/docs/python/parquet.html",
+              "scope": "Follow single-file write/read, metadata inspection, projection and compression sections."
+            },
+            {
+              "name": "Apache Parquet file format",
+              "url": "https://parquet.apache.org/docs/file-format/",
+              "scope": "Use row-group/column-chunk/file-metadata structure to connect physical layout to engine reads."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L04",
           "title": "Partitioning strategy and pruning",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Arrow Parquet datasets",
+              "url": "https://arrow.apache.org/docs/python/parquet.html",
+              "scope": "Use Partitioned Datasets section: directory partitions, dataset read/write, and filter/pruning reasoning."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L05",
           "title": "Small-files problem and compaction",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "delta-rs small-file compaction",
+              "url": "https://delta-io.github.io/delta-rs/usage/optimize/small-file-compaction-with-optimize/",
+              "scope": "Use file-count cause, optimize/compaction and vacuum-after-optimize distinction; course still requires measurable trigger + parity controls."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L06",
           "title": "Catalogs, metadata and table namespaces",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Iceberg catalogs",
+              "url": "https://iceberg.apache.org/docs/latest/catalog-properties/",
+              "scope": "Use catalog/warehouse/REST-catalog concepts to reinforce logical table identity and metadata boundary."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L07",
           "title": "Lake vs warehouse vs lakehouse + open table-format trade-offs",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Delta Lake current project documentation",
+              "url": "https://docs.delta.io/",
+              "scope": "Use current lakehouse/ACID/versioning capabilities; project release context is refreshed separately from the local delta-rs lab."
+            },
+            {
+              "name": "Apache Iceberg latest documentation",
+              "url": "https://iceberg.apache.org/docs/latest/",
+              "scope": "Use open-table-format, schema/partition evolution and multi-engine concepts."
+            },
+            {
+              "name": "Apache Iceberg table spec",
+              "url": "https://iceberg.apache.org/spec/",
+              "scope": "Use format-version and metadata/snapshot model for deeper comparison."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -749,34 +1221,51 @@
           "bookPage": 27,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Delta Lake documentation",
+              "url": "https://docs.delta.io/",
+              "scope": "Use ACID, scalable metadata, transaction-log/versioned-table concepts."
+            },
+            {
+              "name": "Databricks - Diving into Delta Lake: Unpacking the Transaction Log",
               "url": "https://www.youtube.com/watch?v=lXlBJdehsdw",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Approx. 30 min. Focus: log actions, atomicity/serializability, checkpoints, state reconstruction and time travel. Use topic chapters; external media is optional."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L09",
           "title": "Schema enforcement and schema evolution",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "delta-rs - Writing Delta Tables",
+              "url": "https://delta-io.github.io/delta-rs/usage/writing/",
+              "scope": "Use schema_mode overwrite/merge behavior and the warning that schema mismatch fails by default."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L10",
           "title": "MERGE, upsert, update and delete patterns",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "delta-rs - Merging a Table",
+              "url": "https://delta-io.github.io/delta-rs/usage/merging-tables/",
+              "scope": "Use dt.merge/TableMerger matched-update + unmatched-insert patterns and merge performance notes."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -785,34 +1274,56 @@
           "bookPage": 36,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Delta Lake quick start - time travel",
+              "url": "https://docs.delta.io/quick-start/",
+              "scope": "Use versioned historical-read example and connect it to transaction-log state."
+            },
+            {
+              "name": "Databricks - Diving into Delta Lake: Unpacking the Transaction Log",
               "url": "https://www.youtube.com/watch?v=lXlBJdehsdw",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus the time-travel/version-state chapters. External media remains optional."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L12",
           "title": "Medallion/layered architecture and table contracts",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Delta Lake documentation",
+              "url": "https://docs.delta.io/",
+              "scope": "Use lakehouse/table semantics as architecture reference; bronze/silver/gold contract design remains course-built and vendor-neutral."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-04-L13",
           "title": "Optimization, retention and maintenance strategy",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "delta-rs - Managing a Table",
+              "url": "https://delta-io.github.io/delta-rs/usage/managing-tables/",
+              "scope": "Use vacuum dry-run/history/maintenance API semantics."
+            },
+            {
+              "name": "delta-rs small-file compaction",
+              "url": "https://delta-io.github.io/delta-rs/usage/optimize/small-file-compaction-with-optimize/",
+              "scope": "Use optimize vs vacuum distinction and safe maintenance workflow."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -833,14 +1344,19 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Apache Spark 4.2.0 documentation",
+              "url": "https://spark.apache.org/docs/latest/",
+              "scope": "Driver/workers, partitions, jobs/stages/tasks and shuffle overview."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Spark architecture video",
               "url": "https://www.youtube.com/watch?v=iXVIPQEGZ9Y",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Driver/workers, partitions, jobs/stages/tasks and shuffle overview."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -849,94 +1365,177 @@
           "bookPage": 9,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Spark 4.2.0 RDD programming guide - cluster concepts",
+              "url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+              "scope": "Focus on driver/executor/lazy/action mental model; video is optional."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Spark architecture video",
               "url": "https://www.youtube.com/watch?v=iXVIPQEGZ9Y",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus on driver/executor/lazy/action mental model; video is optional."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L03",
           "title": "PySpark DataFrames and explicit schemas",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PySpark 4.2.0 installation",
+              "url": "https://spark.apache.org/docs/latest/api/python/getting_started/install.html",
+              "scope": "Use the setup/DataFrame lesson linked from the module; exact repository module may evolve."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp 2026 Spark module",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Use the setup/DataFrame lesson linked from the module; exact repository module may evolve."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L04",
           "title": "Selecting, filtering and expression design",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PySpark DataFrame API",
+              "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html",
+              "scope": "Use the DataFrames/SQL demonstration when a visual walkthrough helps."
+            },
+            {
+              "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Use the DataFrames/SQL demonstration when a visual walkthrough helps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L05",
           "title": "Joins and distributed join consequences",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PySpark DataFrame.join",
+              "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.join.html",
+              "scope": "Watch the join-internals segment linked from the module; preserve grain checks from the book."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp - internals of GroupBy and joins",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Watch the join-internals segment linked from the module; preserve grain checks from the book."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L06",
           "title": "Aggregations, grouping and window functions",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PySpark Window API",
+              "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/window.html",
+              "scope": "Use the DataFrames/SQL material for aggregation/window reinforcement."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp Spark module",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Use the DataFrames/SQL material for aggregation/window reinforcement."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L07",
           "title": "Nulls, types and data-cleaning patterns",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark SQL null semantics",
+              "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+              "scope": "Mapped source for this lesson."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L08",
           "title": "Reading and writing CSV/JSON/Parquet/Delta",
           "bookPage": 27,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark Parquet data source",
+              "url": "https://spark.apache.org/docs/latest/sql-data-sources-parquet.html",
+              "scope": "Use the Parquet/repartition exercise as visual reinforcement."
+            },
+            {
+              "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Use the Parquet/repartition exercise as visual reinforcement."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L09",
           "title": "Spark SQL and DataFrame interoperability",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark SQL programming guide",
+              "url": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
+              "scope": "Mapped source for this lesson."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L10",
           "title": "Partitions, repartition, coalesce and shuffles",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark SQL performance tuning",
+              "url": "https://spark.apache.org/docs/latest/sql-performance-tuning/",
+              "scope": "Use partition/task/stage views; visual is optional support."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Spark UI performance walkthrough",
+              "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
+              "scope": "Use partition/task/stage views; visual is optional support."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -945,34 +1544,61 @@
           "bookPage": 36,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "PySpark DataFrame.explain",
+              "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.explain.html",
+              "scope": "Focus on scans, exchanges, joins and statistics in the SQL tab."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Query plan to Spark SQL UI performance",
               "url": "https://www.youtube.com/watch?v=_Ne27JcLnEc",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus on scans, exchanges, joins and statistics in the SQL tab."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L12",
           "title": "Caching and persistence decisions",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark SQL performance tuning - caching",
+              "url": "https://spark.apache.org/docs/latest/sql-performance-tuning/",
+              "scope": "Inspect storage/execution only after the book’s cache decision logic."
+            },
+            {
+              "name": "OPTIONAL VISUAL: Spark UI performance walkthrough",
+              "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
+              "scope": "Inspect storage/execution only after the book’s cache decision logic."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L13",
           "title": "Data skew and uneven partition diagnosis",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark SQL performance tuning - skew",
+              "url": "https://spark.apache.org/docs/latest/sql-performance-tuning/",
+              "scope": "Use task-duration/partition evidence to recognize stragglers."
+            },
+            {
+              "name": "RECOMMENDED VISUAL: Spark UI performance walkthrough",
+              "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
+              "scope": "Use task-duration/partition evidence to recognize stragglers."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -981,34 +1607,56 @@
           "bookPage": 45,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Spark SQL performance tuning - AQE",
+              "url": "https://spark.apache.org/docs/latest/sql-performance-tuning/",
+              "scope": "Compare planned versus observed/adaptive execution; no tuning by folklore."
+            },
+            {
+              "name": "OPTIONAL VISUAL: Query plan to Spark SQL UI performance",
               "url": "https://www.youtube.com/watch?v=_Ne27JcLnEc",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Compare planned versus observed/adaptive execution; no tuning by folklore."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L15",
           "title": "Testing Spark transformations and output invariants",
           "bookPage": 48,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Testing PySpark",
+              "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+              "scope": "Mapped source for this lesson."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-05-L16",
           "title": "Packaging and running repeatable Spark jobs",
           "bookPage": 51,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark submitting applications",
+              "url": "https://spark.apache.org/docs/latest/submitting-applications.html",
+              "scope": "Use packaging/submission examples only as reinforcement; learner package stays authoritative."
+            },
+            {
+              "name": "OPTIONAL VISUAL: Data Engineering Zoomcamp Spark module",
+              "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
+              "scope": "Use packaging/submission examples only as reinforcement; learner package stays authoritative."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -1027,10 +1675,21 @@
           "id": "C3-06-L01",
           "title": "Batch vs streaming and event-driven mental models",
           "bookPage": 3,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Kafka 4.3 - Introduction",
+              "url": "https://kafka.apache.org/43/getting-started/introduction/",
+              "scope": "Use the topics/partitions/producers/consumers sections; skip obsolete ZooKeeper-era details if shown."
+            },
+            {
+              "name": "freeCodeCamp - Apache Kafka for Beginners (preserved R057)",
+              "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
+              "scope": "Use the topics/partitions/producers/consumers sections; skip obsolete ZooKeeper-era details if shown."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1039,14 +1698,19 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Apache Kafka 4.3 - Design",
+              "url": "https://kafka.apache.org/43/design/",
+              "scope": "Use the broker/topic/partition/replication explanation; current Apache docs control KRaft-era behavior."
+            },
+            {
+              "name": "freeCodeCamp - Apache Kafka for Beginners (preserved R057)",
               "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Use the broker/topic/partition/replication explanation; current Apache docs control KRaft-era behavior."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1055,14 +1719,19 @@
           "bookPage": 9,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Apache Kafka 4.3 - Consumer configs",
+              "url": "https://kafka.apache.org/43/configuration/consumer-configs/",
+              "scope": "Use the consumer-group/partition assignment portion; current group-protocol details come from Apache docs."
+            },
+            {
+              "name": "freeCodeCamp - Apache Kafka for Beginners (preserved R057)",
               "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Use the consumer-group/partition assignment portion; current group-protocol details come from Apache docs."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1071,24 +1740,35 @@
           "bookPage": 12,
           "watch": [
             {
-              "name": "Instructor / official source 2",
-              "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "name": "Apache Kafka 4.3 - Consumer offset tracking",
+              "url": "https://kafka.apache.org/43/implementation/distribution/",
+              "scope": "Mapped source for this lesson."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-06-L05",
           "title": "Event serialization: JSON/Avro/Protobuf, schema registry and evolution",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Confluent - Schema Evolution & Compatibility",
+              "url": "https://docs.confluent.io/cloud/current/sr/fundamentals/schema-evolution.html",
+              "scope": "Watch for the mental model only; the book/current Confluent docs define compatibility modes."
+            },
+            {
+              "name": "Schema Registry visual (preserved R058)",
+              "url": "https://www.youtube.com/watch?v=RgEoYw6u0sg",
+              "scope": "Watch for the mental model only; the book/current Confluent docs define compatibility modes."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1097,34 +1777,51 @@
           "bookPage": 18,
           "watch": [
             {
-              "name": "Instructor / official source 2",
-              "url": "https://www.youtube.com/watch?v=RgEoYw6u0sg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "name": "Debezium 3.6 Documentation",
+              "url": "https://debezium.io/documentation/reference/3.6/index.html",
+              "scope": "Mapped source for this lesson."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-06-L07",
           "title": "Delivery semantics, duplicates and idempotent consumers",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Kafka 4.3 - Consumer configs",
+              "url": "https://kafka.apache.org/43/configuration/consumer-configs/",
+              "scope": "Mapped source for this lesson."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-06-L08",
           "title": "Event time vs processing time and late arrivals",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark 4.2 - Structured Streaming DataFrame/Dataset APIs",
+              "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+              "scope": "Use the event-time/late-data concepts; current Spark docs control exact API behavior."
+            },
+            {
+              "name": "Databricks Structured Streaming design visual (preserved R059)",
+              "url": "https://www.youtube.com/watch?v=_guCMLpJQ74",
+              "scope": "Use the event-time/late-data concepts; current Spark docs control exact API behavior."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1133,14 +1830,19 @@
           "bookPage": 27,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Spark 4.2 - Event-time windows and watermarking",
+              "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html#handling-late-data-and-watermarking",
+              "scope": "Focus on event-time windows/watermark mental model; no timestamp is invented."
+            },
+            {
+              "name": "Databricks Structured Streaming design visual (preserved R059)",
               "url": "https://www.youtube.com/watch?v=_guCMLpJQ74",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus on event-time windows/watermark mental model; no timestamp is invented."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1149,14 +1851,19 @@
           "bookPage": 30,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Spark 4.2 - Structured Streaming + Kafka integration",
+              "url": "https://spark.apache.org/docs/latest/streaming/structured-streaming-kafka-integration.html",
+              "scope": "Focus on streaming DataFrame source/sink/checkpoint shape."
+            },
+            {
+              "name": "Databricks Structured Streaming design visual (preserved R059)",
               "url": "https://www.youtube.com/watch?v=_guCMLpJQ74",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus on streaming DataFrame source/sink/checkpoint shape."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1165,34 +1872,61 @@
           "bookPage": 33,
           "watch": [
             {
-              "name": "Instructor / official source 2",
-              "url": "https://www.youtube.com/watch?v=_guCMLpJQ74",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "name": "Spark 4.2 - Structured Streaming state/checkpoint notes",
+              "url": "https://spark.apache.org/docs/latest/streaming/additional-information.html",
+              "scope": "Checkpoint/restart examples; current Spark docs remain authority."
+            },
+            {
+              "name": "Databricks - Dive into Streaming Checkpoints & Best Practices (preserved R060)",
+              "url": "https://community.databricks.com/t5/databricks-tv/dive-into-streaming-checkpoints-amp-best-practices-1-25-2023/ba-p/98943",
+              "scope": "Checkpoint/restart examples; current Spark docs remain authority."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-06-L12",
           "title": "Streaming into Delta/lakehouse tables",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Delta Lake - Table streaming reads and writes",
+              "url": "https://docs.delta.io/delta-streaming/",
+              "scope": "Use for Spark 4.2/Delta 4.4 compatibility and modern table-streaming context."
+            },
+            {
+              "name": "Delta Lake 4.4.0 release context",
+              "url": "https://delta.io/blog/2026-08-20-simplifying-your-open-lakehouse-with-the-delta-kernel-and-the-uc-delta-apis/",
+              "scope": "Use for Spark 4.2/Delta 4.4 compatibility and modern table-streaming context."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-06-L13",
           "title": "Lag, operational failure modes and stream monitoring",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Apache Kafka 4.3 - Basic operations / consumer lag",
+              "url": "https://kafka.apache.org/43/operations/basic-kafka-operations/",
+              "scope": "Use query progress/state metrics and consumer-group lag evidence."
+            },
+            {
+              "name": "Spark 4.2 Structured Streaming guide",
+              "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+              "scope": "Use query progress/state metrics and consumer-group lag evidence."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -1211,150 +1945,315 @@
           "id": "C3-07-L01",
           "title": "Cloud data-platform primitives: storage, compute, network and IAM",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Fabric overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R061 Fabric overview visual",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/unlocking-data-analytics-at-scale-with-microsoft-fabric",
+              "scope": "Topic-directed; provider page exposes no chapter timestamps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L02",
           "title": "Identity, RBAC, secrets and least privilege",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OneLake security overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R065 Secure and govern Fabric",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/secure-and-govern-mastering-microsoft-fabric-for-the-enterprise",
+              "scope": "Topic-directed; provider page exposes no chapter timestamps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L03",
           "title": "Fabric workspaces, OneLake, shortcuts and mirroring architecture",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OneLake overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R062 Exploring OneLake",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/no-walls-just-data-exploring-onelake-in-microsoft-fabric",
+              "scope": "Topic-directed; provider page exposes no chapter timestamps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L04",
           "title": "Fabric lakehouse and Delta tables",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric lakehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-overview",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Lakehouse Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/get-started-with-microsoft-fabric-ep01-get-started-with-end-to-end-analytics-and-lakehouses-in-microsoft-fabric",
+              "scope": "Topic-directed; use lakehouse creation/storage/SQL portions."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L05",
           "title": "Data Factory pipelines, Copy activity and Dataflow Gen2 decision",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Factory overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/data-factory-overview",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R063 Data Factory pipelines Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep104-use-data-factory-pipelines-in-microsoft-fabric",
+              "scope": "03:22 objectives; 06:43 pipelines; 09:57 Copy Data; 22:48 run/monitor."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L06",
           "title": "Connections, parameters and gateway boundaries",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Access on-premises data in Data Factory",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/how-to-access-on-premises-data",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R063 Data Factory pipelines Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep104-use-data-factory-pipelines-in-microsoft-fabric",
+              "scope": "06:43-26:41 pipeline/copy/run context; gateway specifics remain book/docs-led."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L07",
           "title": "Fabric notebooks with PySpark",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Load lakehouse data with a notebook",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-notebook-load-data",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Spark in Fabric Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep202-use-apache-spark-in-microsoft-fabric",
+              "scope": "12:44 prepare; 15:59 configure; 25:21 run code; 31:34 DataFrame; 37:09 transform; 1:00:31 save."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L08",
           "title": "Spark job definitions, environments and scheduling",
           "bookPage": 27,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Spark Job Definition source control",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-definition-source-control",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Spark in Fabric Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep202-use-apache-spark-in-microsoft-fabric",
+              "scope": "Use Spark execution sections; Job Definition promotion remains docs-led."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L09",
           "title": "Fabric Warehouse and T-SQL serving layer",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Warehouse Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep106-get-started-with-data-warehouses-in-microsoft-fabric",
+              "scope": "16:13 fundamentals; 41:45 Fabric warehouse; 49:54 query/transform; 1:16:08 secure/monitor."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L10",
           "title": "Eventstreams, Eventhouse and KQL foundations",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Real-Time Intelligence documentation",
+              "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Fabric overview visual",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/unlocking-data-analytics-at-scale-with-microsoft-fabric",
+              "scope": "Topic-directed; RTI implementation is docs/book-led."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L11",
           "title": "Incremental and CDC-style implementation patterns",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Create a Copy Job",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/create-copy-job",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R063 Data Factory pipelines Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep104-use-data-factory-pipelines-in-microsoft-fabric",
+              "scope": "09:57-26:41 movement/run-monitor concepts; CDC/Copy Job specifics are current docs-led."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L12",
           "title": "Git integration, database projects and deployment pipelines",
           "bookPage": 39,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Lakehouse Git & deployment pipelines",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-git-deployment-pipelines",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R064 Fabric items in Git",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/bringing-microsoft-fabric-items-into-source-control-git",
+              "scope": "Topic-directed; provider page exposes no chapter timestamps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L13",
           "title": "Monitoring and performance optimization",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Monitoring Hub",
+              "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Warehouse Learn Live",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep106-get-started-with-data-warehouses-in-microsoft-fabric",
+              "scope": "1:16:08 onward for secure/monitor orientation; Monitoring Hub docs control exact behavior."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L14",
           "title": "Fabric security & governance: access scopes, masking, labels, audit and OneLake security",
           "bookPage": 45,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OneLake security roles",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R065 Secure and govern Fabric",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/secure-and-govern-mastering-microsoft-fabric-for-the-enterprise",
+              "scope": "Topic-directed; provider page exposes no chapter timestamps."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-07-L15",
           "title": "Capacity/cost awareness and DP-700 objective mapping",
           "bookPage": 48,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DP-700 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "R061 Fabric overview visual",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/unlocking-data-analytics-at-scale-with-microsoft-fabric",
+              "scope": "Topic-directed; certification objective wording is refreshed from official study guide."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -1373,40 +2272,64 @@
           "id": "C3-08-L01",
           "title": "Data-quality dimensions and enforceable contracts",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OpenLineage Data Quality Assertions",
+              "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
+              "scope": "whole relevant page"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L02",
           "title": "Blocking vs warning checks and severity design",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OpenLineage Data Quality Assertions",
+              "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
+              "scope": "success vs severity section"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L03",
           "title": "Source-to-target reconciliation patterns",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OpenLineage Object Model",
+              "url": "https://openlineage.io/docs/spec/object-model/",
+              "scope": "Dataset and data-quality facet portions"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L04",
           "title": "Freshness, completeness and timeliness controls",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Google SRE - Service Level Objectives",
+              "url": "https://sre.google/sre-book/service-level-objectives/",
+              "scope": "control measures + SLO design"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1415,14 +2338,19 @@
           "bookPage": 18,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "OpenLineage Object Model",
+              "url": "https://openlineage.io/docs/spec/object-model/",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "Cross-Platform Data Lineage with OpenLineage",
               "url": "https://www.youtube.com/watch?v=rO3BPqUtWrI",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Architecture + live demo; provider publishes no chapter timestamps."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1431,14 +2359,19 @@
           "bookPage": 21,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "OpenTelemetry Overview",
+              "url": "https://opentelemetry.io/docs/specs/otel/overview/",
+              "scope": "signals + resource/context sections"
+            },
+            {
+              "name": "Logs, Metrics, Traces: Correlate with OpenTelemetry",
               "url": "https://www.youtube.com/watch?v=kft86_LA-Pg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "0:00 problem; 0:58 logs->traces; 2:39 logs->metrics; 3:47 semantic mapping."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1447,14 +2380,19 @@
           "bookPage": 24,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Google SRE - Implementing SLOs",
+              "url": "https://sre.google/workbook/implementing-slos/",
+              "scope": "SLO definition/implementation sections"
+            },
+            {
+              "name": "OpenTelemetry Explained for Beginners",
               "url": "https://www.youtube.com/watch?v=Qg4aPDZFbkA",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Topic-directed; provider metadata exposes no chapters."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1463,44 +2401,77 @@
           "bookPage": 27,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Google SRE Workbook - Incident Response",
+              "url": "https://sre.google/workbook/incident-response/",
+              "scope": "incident response chapter"
+            },
+            {
+              "name": "Logs, Metrics, Traces: Correlate with OpenTelemetry",
               "url": "https://www.youtube.com/watch?v=kft86_LA-Pg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "0:58-3:47 debugging/correlation flow."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L09",
           "title": "Runbooks and operational handoff",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Google SRE Workbook - Incident Response",
+              "url": "https://sre.google/workbook/incident-response/",
+              "scope": "roles/response workflow"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L10",
           "title": "Secrets, identity and access-control engineering",
           "bookPage": 33,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OWASP Secrets Management Cheat Sheet",
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+              "scope": "lifecycle/access/auditing/OIDC sections"
+            },
+            {
+              "name": "GitHub Actions OIDC in cloud providers",
+              "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers",
+              "scope": "overview + trust conditions"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L11",
           "title": "Encryption and sensitive-data handling",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OWASP Secrets Management Cheat Sheet",
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+              "scope": "TLS/logging/incident response sections"
+            },
+            {
+              "name": "OneLake Security Overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+              "scope": "whole relevant page"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1509,14 +2480,19 @@
           "bookPage": 39,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "GitHub Deployments and Environments",
+              "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+              "scope": "protection rules + environment secrets"
+            },
+            {
+              "name": "Continuous delivery with GitHub Actions",
               "url": "https://www.youtube.com/watch?v=36hY0-O4STg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "3:55 protect environments; 5:36 scope secrets; 7:02 deployment tracking; 8:44 demo."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1525,34 +2501,56 @@
           "bookPage": 42,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "GitHub Deployment Environments",
+              "url": "https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "GitHub Changelog: Manage and deploy environments",
               "url": "https://www.youtube.com/watch?v=T5VZBA92HS0",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Whole 2021 demo; current behavior controlled by docs."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L14",
           "title": "Infrastructure-as-code concepts for data systems",
           "bookPage": 45,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Terraform plan",
+              "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+              "scope": "intro + plan behavior"
+            },
+            {
+              "name": "Terraform state locking",
+              "url": "https://developer.hashicorp.com/terraform/language/state/locking",
+              "scope": "whole relevant page"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-08-L15",
           "title": "Cost, performance and reliability trade-offs",
           "bookPage": 48,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Google SRE - Monitoring Distributed Systems",
+              "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+              "scope": "why monitor + simplicity/golden signals"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
@@ -1573,34 +2571,51 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Azure Well-Architected Framework",
+              "url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+              "scope": "whole relevant page"
+            },
+            {
+              "name": "John Savill - Microsoft Fabric Overview",
               "url": "https://www.youtube.com/watch?v=GbxVsi94DrE",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Use architecture/platform overview; current docs control behavior."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L02",
           "title": "Source contracts, synthetic/public data and reproducible inputs",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt model contracts",
+              "url": "https://docs.getdbt.com/docs/mesh/govern/model-contracts",
+              "scope": "Why define a contract + breaking changes"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L03",
           "title": "Build the batch ingestion path",
           "bookPage": 12,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14 csv documentation",
+              "url": "https://docs.python.org/3.14/library/csv.html",
+              "scope": "reader/writer/DictReader sections"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1609,44 +2624,72 @@
           "bookPage": 15,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Debezium 3.6 documentation",
+              "url": "https://debezium.io/documentation/reference/3.6/index.html",
+              "scope": "What is it + connector/tutorial concepts"
+            },
+            {
+              "name": "freeCodeCamp - Apache Kafka for Beginners",
               "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Use modern concepts; current Debezium/Kafka docs control exact behavior."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L05",
           "title": "Design layered lakehouse and serving architecture",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Delta Lake 4.4.0 release context",
+              "url": "https://delta.io/blog/2026-08-20-simplifying-your-open-lakehouse-with-the-delta-kernel-and-the-uc-delta-apis/",
+              "scope": "Delta-Spark now defaults to Spark 4.2"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L06",
           "title": "Transformation engineering, modeling and tests",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "dbt data tests",
+              "url": "https://docs.getdbt.com/docs/build/data-tests",
+              "scope": "data tests + relationship to model contracts"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L07",
           "title": "Orchestration, retries, backfills and partial reruns",
           "bookPage": 24,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Airflow 3.3.1 architecture overview",
+              "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
+              "scope": "DAG/tasks/components"
+            },
+            {
+              "name": "Astronomer - Building ETL/ELT pipelines with Airflow 3",
+              "url": "https://www.astronomer.io/events/webinars/etl-elt-airflow-3-workshop-video/",
+              "scope": "Focus on orchestration, quality, backfills; page exposes no verified chapters."
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1655,24 +2698,35 @@
           "bookPage": 27,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "Spark 4.2.0 documentation",
+              "url": "https://spark.apache.org/docs/latest/",
+              "scope": "overview + quick start"
+            },
+            {
+              "name": "Spark architecture visual",
               "url": "https://www.youtube.com/watch?v=iXVIPQEGZ9Y",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "Focus driver/workers/partitions/jobs/stages/tasks/shuffle."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L09",
           "title": "Quality gates and source-to-output reconciliation",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OpenLineage Data Quality Assertions",
+              "url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_assertions/",
+              "scope": "success vs severity + assertion fields"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1681,24 +2735,35 @@
           "bookPage": 33,
           "watch": [
             {
-              "name": "Instructor / official source 2",
+              "name": "OpenTelemetry Overview",
+              "url": "https://opentelemetry.io/docs/specs/otel/overview/",
+              "scope": "signals + resource/context sections"
+            },
+            {
+              "name": "Logs, Metrics, Traces: Correlate with OpenTelemetry",
               "url": "https://www.youtube.com/watch?v=kft86_LA-Pg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "0:58 logs->traces; 2:39 logs->metrics; 3:47 semantic mapping."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L11",
           "title": "Security, governance and privacy-safe evidence",
           "bookPage": 36,
-          "watch": [],
+          "watch": [
+            {
+              "name": "OneLake security overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+              "scope": "control plane + data plane + role effects"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
@@ -1707,44 +2772,72 @@
           "bookPage": 39,
           "watch": [
             {
-              "name": "Instructor / official source 3",
+              "name": "GitHub deployments and environments",
+              "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+              "scope": "deployment protection rules + environment secrets"
+            },
+            {
+              "name": "GitHub Actions OIDC in cloud providers",
+              "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers",
+              "scope": "permissions + provider token exchange"
+            },
+            {
+              "name": "Continuous delivery with GitHub Actions",
               "url": "https://www.youtube.com/watch?v=36hY0-O4STg",
-              "scope": "Mapped source for this lesson — follow the bounded range printed in the book when provided."
+              "scope": "3:55 protect environments; 5:36 scoped secrets; 7:02 deployments; 8:44 demo."
             }
           ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L13",
           "title": "Incident injection, recovery and prevention",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Google SRE Workbook - Incident Response",
+              "url": "https://sre.google/workbook/incident-response/",
+              "scope": "incident response chapter"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L14",
           "title": "Runbook, README, handoff and portfolio evidence",
           "bookPage": 45,
-          "watch": [],
+          "watch": [
+            {
+              "name": "GitHub - About README files",
+              "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+              "scope": "what a README should communicate"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         },
         {
           "id": "C3-09-L15",
           "title": "Final architecture defense and engineering transition",
           "bookPage": 48,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DP-700 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+              "scope": "skills measured as of July 21, 2026"
+            }
+          ],
           "planningHours": [
-            3.0,
-            5.0
+            3,
+            5
           ]
         }
       ],
