@@ -146,6 +146,11 @@
               "name": "Python 3.14 - Command line and environment",
               "url": "https://docs.python.org/3.14/using/cmdline.html",
               "scope": "Environment variables / command line behavior"
+            },
+            {
+              "name": "Luke Barousse - Python for Data Analytics",
+              "url": "https://www.youtube.com/watch?v=wUSDVGivd-8",
+              "scope": "5:50:56-6:27:15 - environment/project setup context; secrets policy comes from this course."
             }
           ],
           "planningHours": [
@@ -263,7 +268,13 @@
           "id": "C3-01-L01",
           "title": "Ingestion architecture: source -> landing -> staging",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for architecture/ingestion context; learner book + official architecture reference + lab are required."
+            }
+          ],
           "planningHours": [
             3,
             5
@@ -278,6 +289,11 @@
               "name": "Python 3.14.7 csv",
               "url": "https://docs.python.org/3.14/library/csv.html",
               "scope": "Reader/DictReader + newline guidance"
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for file/CSV ingestion context; Python csv docs + learner book + lab are required."
             }
           ],
           "planningHours": [
@@ -294,6 +310,11 @@
               "name": "Python 3.14.7 json",
               "url": "https://docs.python.org/3.14/library/json.html",
               "scope": "load/loads + encoder/decoder behavior"
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for nested-record normalization context; learner book + JSON lab are required."
             }
           ],
           "planningHours": [
@@ -394,6 +415,11 @@
               "name": "Python 3.14 sqlite3",
               "url": "https://docs.python.org/3.14/library/sqlite3.html",
               "scope": "Placeholders + execute/query examples"
+            },
+            {
+              "name": "Mike Bayer - SQLAlchemy 2.0 getting started (embedded instructor video)",
+              "url": "https://www.sqlalchemy.org/library.html",
+              "scope": "Optional visual - no verified bounded range. Play the first tutorial, SQLAlchemy 2.0 - The One-Point-Four-Ening. Focus on engine, connection, SELECT and transaction boundaries. The course examples use explicit transactions."
             }
           ],
           "planningHours": [
@@ -405,7 +431,13 @@
           "id": "C3-01-L09",
           "title": "Historical batch loading and landing metadata",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Data Engineering Zoomcamp - ingestion with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "Optional visual - no verified bounded range. Focus on source acquisition, incremental loading and replay. The supplied exercises define their own raw identity and progress contracts."
+            }
+          ],
           "planningHours": [
             3,
             5
@@ -462,6 +494,11 @@
               "name": "Python 3.14 datetime",
               "url": "https://docs.python.org/3.14/library/datetime.html",
               "scope": "Aware/naive objects + timezone"
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for schema-change context; learner book + datetime/schema-drift lab are required."
             }
           ],
           "planningHours": [
@@ -473,7 +510,13 @@
           "id": "C3-01-L13",
           "title": "Checkpoint/state management and replay safety",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Data Engineering Zoomcamp - ingestion with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "Optional visual - no verified bounded range. Focus on source acquisition, incremental loading and replay. The supplied exercises define their own raw identity and progress contracts."
+            }
+          ],
           "planningHours": [
             3,
             5
@@ -563,6 +606,11 @@
               "name": "dbt Labs - dbt explained (official 2-minute explainer)",
               "url": "https://www.getdbt.com/blog/dbt-explained",
               "scope": "Embedded 2-minute official explainer + How dbt works section"
+            },
+            {
+              "name": "dbt-style project anatomy, sources and dependency graph - retained visual",
+              "url": "https://www.youtube.com/watch?v=2dYDS4OQbT0",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -742,6 +790,11 @@
               "name": "Microsoft Fabric - Load tables in a dimensional model",
               "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-load-tables",
               "scope": "Surrogate/SCD loading concepts"
+            },
+            {
+              "name": "freeCodeCamp - Learn PostgreSQL Tutorial - Full Course for Beginners",
+              "url": "https://www.youtube.com/watch?v=qw--VYLpxG4",
+              "scope": "2:29:24-2:49:15 + 3:16:41-3:25:04 + 3:50:42-3:57:18 for Serial & Sequences"
             }
           ],
           "planningHours": [
@@ -1166,6 +1219,11 @@
               "name": "delta-rs small-file compaction",
               "url": "https://delta-io.github.io/delta-rs/usage/optimize/small-file-compaction-with-optimize/",
               "scope": "Use file-count cause, optimize/compaction and vacuum-after-optimize distinction; course still requires measurable trigger + parity controls."
+            },
+            {
+              "name": "Visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "07:30-10:04 file size + compression"
             }
           ],
           "planningHours": [
@@ -1208,6 +1266,11 @@
               "name": "Apache Iceberg table spec",
               "url": "https://iceberg.apache.org/spec/",
               "scope": "Use format-version and metadata/snapshot model for deeper comparison."
+            },
+            {
+              "name": "Optional visual: Data Mozart - Parquet File Format Explained",
+              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
+              "scope": "10:04-11:28 Delta-format introduction only; lakehouse architecture is taught by the book + current official docs."
             }
           ],
           "planningHours": [
@@ -1245,6 +1308,11 @@
               "name": "delta-rs - Writing Delta Tables",
               "url": "https://delta-io.github.io/delta-rs/usage/writing/",
               "scope": "Use schema_mode overwrite/merge behavior and the warning that schema mismatch fails by default."
+            },
+            {
+              "name": "Optional visual: Databricks - Deep-Dive into Delta Lake",
+              "url": "https://www.youtube.com/watch?v=de-6a6Bfw6E",
+              "scope": "No independently verified bounded chapter range assigned; schema/evolution behavior comes from the book + current official docs."
             }
           ],
           "planningHours": [
@@ -1394,6 +1462,11 @@
               "name": "RECOMMENDED VISUAL: Data Engineering Zoomcamp 2026 Spark module",
               "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/06-batch",
               "scope": "Use the setup/DataFrame lesson linked from the module; exact repository module may evolve."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "DataFrame reading and schema-oriented workflow"
             }
           ],
           "planningHours": [
@@ -1531,6 +1604,11 @@
               "name": "RECOMMENDED VISUAL: Spark UI performance walkthrough",
               "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
               "scope": "Use partition/task/stage views; visual is optional support."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=r_Sf6fCB40c",
+              "scope": "Partition-count changes in practical Spark work"
             }
           ],
           "planningHours": [
@@ -1573,6 +1651,11 @@
               "name": "OPTIONAL VISUAL: Spark UI performance walkthrough",
               "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
               "scope": "Inspect storage/execution only after the book’s cache decision logic."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=r_Sf6fCB40c",
+              "scope": "Repeated-action/caching context"
             }
           ],
           "planningHours": [
@@ -1594,6 +1677,11 @@
               "name": "RECOMMENDED VISUAL: Spark UI performance walkthrough",
               "url": "https://community.databricks.com/t5/databricks-tv/mastering-the-sparkui-on-databricks-2024-04-30/ba-p/79909",
               "scope": "Use task-duration/partition evidence to recognize stragglers."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "Uneven partitions and skew context"
             }
           ],
           "planningHours": [
@@ -1631,6 +1719,11 @@
               "name": "Testing PySpark",
               "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
               "scope": "Mapped source for this lesson."
+            },
+            {
+              "name": "Optional visual: DataTalksClub - Apache Spark / PySpark (no verified bounded range)",
+              "url": "https://www.youtube.com/watch?v=ti3aC1m3rE8",
+              "scope": "Transformation refresher; testing task remains independent"
             }
           ],
           "planningHours": [
@@ -1901,6 +1994,16 @@
               "name": "Delta Lake 4.4.0 release context",
               "url": "https://delta.io/blog/2026-08-20-simplifying-your-open-lakehouse-with-the-delta-kernel-and-the-uc-delta-apis/",
               "scope": "Use for Spark 4.2/Delta 4.4 compatibility and modern table-streaming context."
+            },
+            {
+              "name": "endjin - Microsoft Fabric: Lakehouse & Medallion Architecture - Part 1",
+              "url": "https://www.youtube.com/watch?v=x_CvCwSbRZI",
+              "scope": "00:22-04:43 - lakehouse concept, Fabric lakehouse, files/tables"
+            },
+            {
+              "name": "Vijay Perepa - Microsoft Fabric Data Engineering Explained: Lakehouse, Spark and OneLake Architecture",
+              "url": "https://www.youtube.com/watch?v=vWdUjrxOYC4",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
@@ -2309,6 +2412,11 @@
               "name": "OpenLineage Object Model",
               "url": "https://openlineage.io/docs/spec/object-model/",
               "scope": "Dataset and data-quality facet portions"
+            },
+            {
+              "name": "Source-to-target reconciliation - retained visual",
+              "url": "https://www.youtube.com/watch?v=7CrrXazV_8k",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
