@@ -1674,7 +1674,7 @@
         {
           "id": "C3-06-L01",
           "title": "Batch vs streaming and event-driven mental models",
-          "bookPage": 3,
+          "bookPage": 6,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Introduction",
@@ -1695,7 +1695,7 @@
         {
           "id": "C3-06-L02",
           "title": "Kafka brokers, topics, partitions and replication",
-          "bookPage": 6,
+          "bookPage": 9,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Design",
@@ -1716,7 +1716,7 @@
         {
           "id": "C3-06-L03",
           "title": "Producers, consumers and consumer groups",
-          "bookPage": 9,
+          "bookPage": 12,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Consumer configs",
@@ -1737,7 +1737,7 @@
         {
           "id": "C3-06-L04",
           "title": "Offsets, retention and replay",
-          "bookPage": 12,
+          "bookPage": 15,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Consumer offset tracking",
@@ -1753,7 +1753,7 @@
         {
           "id": "C3-06-L05",
           "title": "Event serialization: JSON/Avro/Protobuf, schema registry and evolution",
-          "bookPage": 15,
+          "bookPage": 18,
           "watch": [
             {
               "name": "Confluent - Schema Evolution & Compatibility",
@@ -1774,7 +1774,7 @@
         {
           "id": "C3-06-L06",
           "title": "Kafka Connect and CDC integration patterns",
-          "bookPage": 18,
+          "bookPage": 21,
           "watch": [
             {
               "name": "Debezium 3.6 Documentation",
@@ -1790,7 +1790,7 @@
         {
           "id": "C3-06-L07",
           "title": "Delivery semantics, duplicates and idempotent consumers",
-          "bookPage": 21,
+          "bookPage": 24,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Consumer configs",
@@ -1806,7 +1806,7 @@
         {
           "id": "C3-06-L08",
           "title": "Event time vs processing time and late arrivals",
-          "bookPage": 24,
+          "bookPage": 27,
           "watch": [
             {
               "name": "Spark 4.2 - Structured Streaming DataFrame/Dataset APIs",
@@ -1827,7 +1827,7 @@
         {
           "id": "C3-06-L09",
           "title": "Watermarks and windowed aggregations",
-          "bookPage": 27,
+          "bookPage": 30,
           "watch": [
             {
               "name": "Spark 4.2 - Event-time windows and watermarking",
@@ -1848,7 +1848,7 @@
         {
           "id": "C3-06-L10",
           "title": "Spark Structured Streaming DataFrames",
-          "bookPage": 30,
+          "bookPage": 33,
           "watch": [
             {
               "name": "Spark 4.2 - Structured Streaming + Kafka integration",
@@ -1869,7 +1869,7 @@
         {
           "id": "C3-06-L11",
           "title": "Checkpointing, restart and state recovery",
-          "bookPage": 33,
+          "bookPage": 36,
           "watch": [
             {
               "name": "Spark 4.2 - Structured Streaming state/checkpoint notes",
@@ -1890,7 +1890,7 @@
         {
           "id": "C3-06-L12",
           "title": "Streaming into Delta/lakehouse tables",
-          "bookPage": 36,
+          "bookPage": 39,
           "watch": [
             {
               "name": "Delta Lake - Table streaming reads and writes",
@@ -1911,7 +1911,7 @@
         {
           "id": "C3-06-L13",
           "title": "Lag, operational failure modes and stream monitoring",
-          "bookPage": 39,
+          "bookPage": 42,
           "watch": [
             {
               "name": "Apache Kafka 4.3 - Basic operations / consumer lag",
