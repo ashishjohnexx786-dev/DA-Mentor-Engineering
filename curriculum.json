@@ -1391,14 +1391,9 @@
               "scope": "Use row-group/column-chunk/file-metadata structure to connect physical layout to engine reads."
             },
             {
-              "name": "Visual: Data Mozart - Parquet File Format Explained",
+              "name": "Data Mozart — Parquet File Format Explained",
               "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
-              "scope": "05:01-07:30 row groups + projection/predicate"
-            },
-            {
-              "name": "Visual: Data Mozart - Parquet File Format Explained",
-              "url": "https://www.youtube.com/watch?v=5NA57Pfpdr4",
-              "scope": "07:30-10:04 file size + compression"
+              "scope": "05:01-10:04 — row groups, projection/predicate reasoning, file size and compression."
             }
           ],
           "planningHours": [
@@ -3158,14 +3153,9 @@
               "scope": "reader/writer/DictReader sections"
             },
             {
-              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
+              "name": "DataTalksClub DE Zoomcamp 2026 — From APIs to Warehouses with dlt",
               "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
-              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for architecture/ingestion context; learner book + official architecture reference + lab are required."
-            },
-            {
-              "name": "DataTalksClub DE Zoomcamp 2026 - From APIs to Warehouses with dlt",
-              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
-              "scope": "OPTIONAL visual support - no independently verified bounded range. Use only for file/CSV ingestion context; Python csv docs + learner book + lab are required."
+              "scope": "Optional ingestion visual — architecture, source acquisition and file/CSV ingestion context. Python csv docs + learner book + capstone lab remain required."
             }
           ],
           "planningHours": [
