@@ -1449,9 +1449,14 @@
           "bookPage": 21,
           "watch": [
             {
-              "name": "Apache Iceberg catalogs",
+              "name": "Apache Iceberg catalogs — official reference",
               "url": "https://iceberg.apache.org/docs/latest/catalog-properties/",
-              "scope": "Use catalog/warehouse/REST-catalog concepts to reinforce logical table identity and metadata boundary."
+              "scope": "Catalog/warehouse/REST-catalog concepts — current reference for logical table identity and metadata boundary."
+            },
+            {
+              "name": "Dremio — Apache Iceberg 101: How to Use Catalogs for Data Management",
+              "url": "https://www.youtube.com/watch?v=YeVnasnJ2Ts",
+              "scope": "Visual explanation of Iceberg catalogs, metadata organization and catalog-option trade-offs. Official Iceberg docs remain syntax/config authority."
             }
           ],
           "planningHours": [
