@@ -1,2 +1,22 @@
 'use strict';
-const CACHE='c3-de-mentor-astra-2026-v4';const SHELL=['./','index.html','styles.css?v=ASTRA-2026-GUIDE4','app.js?v=ASTRA-2026-GUIDE4','curriculum.json?v=ASTRA-2026-GUIDE4','icon.svg','manifest.webmanifest','data/study_guide.json?v=ASTRA-2026-GUIDE4'];self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())));self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('c3-de-mentor-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);if(u.origin!==self.location.origin||!u.pathname.startsWith(new URL(self.registration.scope).pathname))return;if(u.pathname.endsWith('.zip'))return;e.respondWith(fetch(e.request).then(async r=>{if(r.ok){try{const c=await caches.open(CACHE);await c.put(e.request,r.clone())}catch{}}return r}).catch(async()=>{const c=await caches.open(CACHE),x=await c.match(e.request);if(x)return x;if(e.request.mode==='navigate')return await c.match('index.html')||new Response('Offline item unavailable',{status:503});return new Response('This item is not saved offline. Reconnect and open it once.',{status:503,headers:{'Content-Type':'text/plain'}})}))});
+const CACHE='fourcourse-c3-astra-2026-r3';
+const OWN_PREFIX='fourcourse-c3-';
+const LEGACY=["c1-da-mentor-astra-de-parity-2026-09-21","senior-bi-mentor-2026-fullshell-candidate-v1","c2b-bridge-astra-de-parity-2026-09-21","c3-de-mentor-astra-2026-v4"];
+const SHELL=['./','index.html','styles.css?v=ASTRA-DE-PARITY-R3-2026-09-21','app.js?v=ASTRA-DE-PARITY-R3-2026-09-21','curriculum.json?v=ASTRA-DE-PARITY-R3-2026-09-21','icon.svg','manifest.webmanifest'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith(OWN_PREFIX)&&k!==CACHE)||LEGACY.includes(k)).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+  const url=new URL(event.request.url),scopePath=new URL(self.registration.scope).pathname;
+  if(url.origin!==self.location.origin||!url.pathname.startsWith(scopePath))return;
+  if(url.pathname.endsWith('.zip'))return;
+  event.respondWith(fetch(event.request,{cache:'no-store'}).then(async response=>{
+    if(response.ok){try{const cache=await caches.open(CACHE);await cache.put(event.request,response.clone())}catch{}}
+    return response;
+  }).catch(async()=>{
+    const cache=await caches.open(CACHE),saved=await cache.match(event.request);
+    if(saved)return saved;
+    if(event.request.mode==='navigate')return await cache.match('index.html')||await cache.match('./')||new Response('Offline item unavailable',{status:503});
+    return new Response('This item is not saved offline. Reconnect and open it once.',{status:503,headers:{'Content-Type':'text/plain'}});
+  }));
+});
