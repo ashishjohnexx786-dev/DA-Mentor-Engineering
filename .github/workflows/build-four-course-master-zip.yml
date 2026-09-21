@@ -1,0 +1,126 @@
+name: Build four-course offline master ZIP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-four-course-master-zip.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Course 1
+        uses: actions/checkout@v6
+        with:
+          repository: ashishjohnexx786-dev/DA-Mentor-Launch
+          ref: main
+          path: source/c1
+
+      - name: Checkout Course 2A
+        uses: actions/checkout@v6
+        with:
+          repository: ashishjohnexx786-dev/DA-Mentor-Advance
+          ref: main
+          path: source/c2a
+
+      - name: Checkout Course 2B
+        uses: actions/checkout@v6
+        with:
+          repository: ashishjohnexx786-dev/DA-Mentor-Bridge
+          ref: main
+          path: source/c2b
+
+      - name: Checkout Course 3
+        uses: actions/checkout@v6
+        with:
+          repository: ashishjohnexx786-dev/DA-Mentor-Engineering
+          ref: main
+          path: source/c3
+
+      - name: Build master backup
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="FOUR_COURSE_MASTER_SYSTEM_2026_FINAL"
+          mkdir -p "$ROOT"
+
+          cp -a source/c1 "$ROOT/01_COURSE_1_DATA_ANALYST"
+          cp -a source/c2a "$ROOT/02A_COURSE_2A_SENIOR_BI_ANALYST"
+          cp -a source/c2b "$ROOT/02B_COURSE_2B_DA_TO_DE_BRIDGE"
+          cp -a source/c3 "$ROOT/03_COURSE_3_DATA_ENGINEERING"
+
+          find "$ROOT" -name .git -type d -prune -exec rm -rf {} +
+          find "$ROOT" -name .git -type f -delete
+
+          C1_SHA="$(git -C source/c1 rev-parse HEAD)"
+          C2A_SHA="$(git -C source/c2a rev-parse HEAD)"
+          C2B_SHA="$(git -C source/c2b rev-parse HEAD)"
+          C3_SHA="$(git -C source/c3 rev-parse HEAD)"
+
+          cat > "$ROOT/START_HERE.md" <<EOF
+          # Four-Course System 2026 — Offline Master Backup
+
+          This package contains all four current course repositories, including each course's current Mentor website, curriculum data, learner materials, practice/assessment files, README and deployment configuration.
+
+          ## Included
+
+          1. Course 1 — Zero-to-Job-Ready Data Analyst 2026
+             Folder: `01_COURSE_1_DATA_ANALYST`
+             Live Mentor: https://ashishjohnexx786-dev.github.io/DA-Mentor-Launch/
+             Snapshot commit: $C1_SHA
+
+          2. Course 2A — Senior / BI Analyst 2026
+             Folder: `02A_COURSE_2A_SENIOR_BI_ANALYST`
+             Live Mentor: https://ashishjohnexx786-dev.github.io/DA-Mentor-Advance/
+             Snapshot commit: $C2A_SHA
+
+          3. Course 2B — DA → Data Engineer Bridge 2026
+             Folder: `02B_COURSE_2B_DA_TO_DE_BRIDGE`
+             Live Mentor: https://ashishjohnexx786-dev.github.io/DA-Mentor-Bridge/
+             Snapshot commit: $C2B_SHA
+
+          4. Course 3 — Data Engineering 2026
+             Folder: `03_COURSE_3_DATA_ENGINEERING`
+             Live Mentor: https://ashishjohnexx786-dev.github.io/DA-Mentor-Engineering/
+             Snapshot commit: $C3_SHA
+
+          ## Future redeployment
+
+          Each numbered folder is a self-contained repository snapshot. To restore a Mentor later, copy that folder's contents to the root of its GitHub repository and deploy GitHub Pages using the included `.github/workflows/pages.yml` when present. Keep the folder structure intact because curriculum, in-Mentor lesson data, PDFs, practice files, icons, service worker and manifest use relative paths.
+
+          The protected Standalone DE Mentor 2026 is intentionally NOT included in this Four-Course backup.
+          EOF
+
+          cat > "$ROOT/RELEASE_SNAPSHOT.txt" <<EOF
+          FOUR_COURSE_MASTER_SYSTEM_2026_FINAL
+          Created: 2026-09-21
+          Course 1 commit: $C1_SHA
+          Course 2A commit: $C2A_SHA
+          Course 2B commit: $C2B_SHA
+          Course 3 commit: $C3_SHA
+          Includes current Mentor source and course assets for all four courses.
+          Standalone DE Mentor 2026 excluded intentionally.
+          EOF
+
+          (
+            cd "$ROOT"
+            find . -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS.txt
+          )
+
+          echo "Package size:"
+          du -sh "$ROOT"
+          echo "Files:"
+          find "$ROOT" -type f | wc -l
+
+      - name: Upload final master ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: FOUR_COURSE_MASTER_SYSTEM_2026_FINAL
+          path: FOUR_COURSE_MASTER_SYSTEM_2026_FINAL
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 6
